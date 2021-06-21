@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/123.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <title>hw12-1</title>
+</head>
+
+<body>
+    
+    <audio autoplay src="./music/ave_marija.ogg"></audio>
+    <main class="main">
+        <header class="contact">
+            <h1 class="contact__h1">Contact</h1>
+            <p class="contact__p">For new projects, ideas, business or anything <br>
+                you'd like to discuss, contact with me!</p>
+        </header>
+        <div class="container">
+            <section class="formlist">
+                <form action="" class="formlist__form">
+                    <input required="" class="input" type="text" name="name" placeholder="Ip adress" 
+                    data-mask="099.099.099.099" minlength="10">
+                    <br>
+                    <input class="input" type="email" name="registration_email" id="email" placeholder="Почта" required>
+                    <br>
+                    <input required class="input" type="tel" name="tel" placeholder="Номер телефона, но можно и карты"
+                        data-mask="+38(000)-000-00-00" minlength="18">
+                    <br>
+                    <textarea class="input textarea" name="message"
+                        placeholder="Чёт черкани тут, что бы было"></textarea><br>
+                    <input class="submit" type="submit" value="Отправить!">
+                
+                </form>
+            </section>
+            <section class="info">
+                <p class="info__name">ADDRESSES <br><span class="info__content"> Odessa City, Deribasovskaya Street, 
+                        Ukraine</span>
+                </p>
+                <p class="info__email">EMAIL <br><span class="info__content">krasivo@gmail.com</span></p>
+                <p class="info__phone">PHONE <br><span class="info__content">+911 666 777 888</span></p>
+            </section>
+        </div>
+        <footer class="footer">
+            <p class="footer__p1">© 2020 Company. All right reserved.</p>
+            <p class="footer__p2">FACT</p>
+            <p class="footer__p3">Made with <span class="footer_conent">love</span> by Vladi Verb</p>
+        </footer>
+    </main>
+    <script src="jquery.mask.js"></script>
+</body>
+
+</html>

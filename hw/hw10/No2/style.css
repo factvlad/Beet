@@ -1,0 +1,120 @@
+@font-face {
+  font-family: lato-bold;
+  src: url(fonts/lato-bold.woff2);
+}
+
+@font-face {
+  font-family: lato-light;
+  src: url(fonts/lato-light.woff);
+}
+
+* {
+  transition: all 0.4s ease-out;
+}
+
+body {
+  background-color: #f6f6f6;
+  background-image: url(./img/Composite_Path.png);
+  background-repeat: space repeat;
+  background-position: center;
+  width: 1603px;
+  height: 736px;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+}
+
+h1 {
+  color: #3c3c3c;
+  font-family: lato-bold, sans-serif;
+  letter-spacing: 0.16em;
+  font-size: 34px;
+  margin: 0;
+  margin-top: 108px;
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 46px;
+  height: 5px;
+  background: #dddbdb;
+  margin-bottom: 40px;
+  border: 0;
+}
+
+.text {
+  color: #3c3c3c;
+  font-size: 16px;
+  font-family: lato-light, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 59px;
+}
+main {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.profile {
+  height: 270px;
+  width: 270px;
+  position: relative;
+  margin: 0 15px;
+  opacity: 0.7;
+}
+.soc {
+  height: 270px;
+  background: #18b5dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  height: 100%;
+  top: 0;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  background-position: center;
+}
+.photo1 {
+  background-image: url(./img/Vlad.png);
+}
+.photo2 {
+  background-image: url(./img/Zura.png);
+}
+.photo3 {
+  background-image: url(./img/Zoya.png);
+}
+.photo4 {
+  background-image: url(./img/Galina.png);
+}
+.link {
+  width: 42px;
+  height: 42px;
+  background-color: #5ecbe7;
+  text-align: center;
+  margin: 5px;
+}
+i {
+  padding-top: 13px;
+  color: #ffffff;
+  z-index: 0;
+}
+.photo:hover {
+  transition: transform 2s;
+  display: none;
+}
+.name {
+  font-size: 18px;
+  font-family: lato-bold, sans-serif;
+  margin-bottom: 0;
+}
+
+.pos {
+  font-family: lato-light, sans-serif;
+  font-size: 14px;
+  color: #646464;
+  margin: 0;
+}

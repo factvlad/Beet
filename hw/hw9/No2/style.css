@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/ProximaNova-Regular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.ttf") format("truetype"),
+    url("fonts/Proxima Nova Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Furura PT Heavy";
+  src: url("fonts/futura-pt-heavy.otf") format("opentype");
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+.main {
+  width: 1200px;
+  background-color: #464f54;
+  margin: 0 auto;
+  padding-top: 150px;
+  position: relative;
+}
+
+.title-container {
+  width: 876px;
+  height: 187px;
+  background-color: #000000;
+  position: absolute;
+  top: 47px;
+  right: 0;
+  box-sizing: border-box;
+  padding-left: 64px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-wrapper {
+  border-bottom: 2px solid #8f8f8f;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Playfair Display";
+}
+
+.title-label {
+  font-size: 0.9375em;
+  color: #8f8f8f;
+  font-family: "Proxima Nova Regular", "sen-serif";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.title {
+  font-size: 3em;
+  font-family: serif;
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Playfair Display";
+  line-height: 94.03px;
+}
+
+.title:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #fff;
+  
+}
+
+.icon-block {
+  width: 812px;
+  height: 76px;
+  background-color: #fbc02d;
+  position: absolute;
+  top: 187px;
+  right: 0;
+  box-sizing: border-box;
+  padding-left: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fadd95;
+  font-size: 1.8em;
+}
+
+.icon-block i {
+  margin-left: 35px;
+}
+
+.icon-block i:hover {
+  color: #ffffff;
+}
+
+.conteiner {
+  width: 1060px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.text-inner {
+  height: 752px;
+  margin: 0 67px;
+  border-left: 2px solid #e8eced;
+  padding: 200px 59px 40px 59px;
+  box-sizing: border-box;
+}
+
+.avtor {
+  font-size: 1.24em;
+  color: #8f8f8f;
+  font-family: "Proxima Nova Regular", "sen-serif";
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.article-title {
+  font-size: 4.6em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Furura PT Heavy", "sen-serif";
+  letter-spacing: 0.05em;
+}
+
+.comment {
+  font-size: 1.875em;
+  color: #8f8f8f;
+  font-weight: 400;
+  font-family: serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.article-text {
+  font-size: 1.68em;
+  font-family: serif;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.article-text span {
+  font-style: italic;
+}

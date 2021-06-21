@@ -1,0 +1,27 @@
+@import 'var';
+.separator{
+    &:before,&:after{
+        content:'';
+        display: inline-block;
+        width:$IconWidth;
+        height:1px;
+        border-top: 1px solid $SecondColor;
+        margin: 0 auto;
+    }   
+}
+.footer{
+    &__navitems{
+        &:after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            position: absolute;
+            top:0px;
+            left:0px;
+            background-color: $SecondColor;
+        }
+    }
+}
+
+
