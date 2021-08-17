@@ -1,0 +1,80 @@
+.main {
+    margin: 0 auto;
+    max-width: 1900px;
+}
+.header {
+    margin: 0 auto;
+    background-image: url(images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // min-height: 1072px;
+    text-align: center;
+    @include flex(column, center, center);
+    color: #ffffff;
+    font-family: lato-bold, sans-serif;
+    font-size: 0;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 3%;
+    &__container {
+        @include svg-container(17%, 11%);
+        margin-top: 11%;
+    }
+    &__logo {
+        @include svg(50%);
+        // transform: scale(2.5);
+        &-1,
+        &-2 {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        &-1 {
+            stroke: #fff;
+        }
+
+        &-1,
+        &-2,
+        &-3 {
+            fill-rule: evenodd;
+        }
+
+        &-2 {
+            stroke: #f6f7fc;
+        }
+        &-3,
+        &-4 {
+            fill: #fff;
+        }
+    }
+
+    &__title {
+        font-size: 3.7vw;
+        letter-spacing: 0.16em;
+        margin-top: 0;
+    }
+    &__descr {
+        font-size: 2vw;
+        line-height: 1.9em;
+        margin-top: 0;
+        font-family: Lato-Regular, sans-serif;
+        padding: 0;
+        letter-spacing: 0.06em;
+    }
+    &__footer {
+        top: 85%;
+        left: 50%;
+        position: absolute;
+    }
+    &__scroll {
+        fill: #fff;
+        fill-rule: evenodd;
+        height: 37px;
+        width: 32px;
+        padding: 0;
+        @include _768 {
+            visibility: hidden;
+        }
+    }
+}

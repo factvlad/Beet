@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="tasks-1-8">
+            <button onclick="Task1()">ДЗ намбер 1</button><br>
+            <button onclick="Task2()">ДЗ намбер 2</button><br>
+            <button onclick="Task3()">ДЗ намбер 3</button><br>
+            <button onclick="Task4()">ДЗ намбер 4</button><br>
+            <button onclick="Task5()">ДЗ намбер 5</button><br>
+            <button onclick="Task6()">ДЗ намбер 6</button><br>
+            <button onclick="Task7()">ДЗ намбер 7</button><br>
+            <button onclick="Task8()">ДЗ намбер 8</button><br>
+            <button onclick="Task10()">ДЗ намбер 10</button>
+        </div>
+
+        <div class="task-9">
+            <form action="">
+                <h2>9 домашка</h2>
+                <div>
+                    <p>Скільки буде 2+2*2?</p>
+                    <input type="radio" name="test1" id="test1-1">4
+                    <br>
+                    <input type="radio" name="test1" id="test1-2">6
+                    <br>
+                    <input type="radio" name="test1" id="test1-3">8
+                    <br>
+                </div>
+                <div>
+                    <p>Скільки буде 3+3</p>
+                    <input type="radio" name="test2" id="test2-1">3
+                    <br>
+                    <input type="radio" name="test2" id="test2-2">6
+                    <br>
+                    <input type="radio" name="test2" id="test2-3">9
+                    <br>
+                </div>
+                <div>
+                    <p>Скільки буде 5*5?</p>
+                    <input type="radio" name="test3" id="test3-1">15
+                    <br>
+                    <input type="radio" name="test3" id="test3-2">25
+                    <br>
+                    <input type="radio" name="test3" id="test3-3">35
+                    <br>
+                </div>
+                <button onclick="task9('test1','test2','test3')">Результат ДЗ №9</button>
+                <!-- <button onclick="radio('test1')">Проверить, какой из элементов выбран</button> -->
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

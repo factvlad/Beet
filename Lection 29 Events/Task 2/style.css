@@ -1,0 +1,17 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+th {
+    cursor: pointer;
+}
+.head {
+    min-width: 50px;
+}
+td {
+    text-align: center;
+}
+td:nth-child(2) {
+    text-align: left;
+}

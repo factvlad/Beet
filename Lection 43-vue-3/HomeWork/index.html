@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Создайте компонент, который будет выполнять следующее поведение: в шаблоне – должны быть две кнопки с функциями
+        инкремента и декремента, параграф и поле ввода. Пользователь в текстовое поле вводит число, после потери фокуса
+        данного поля это число моментально появляется ниже в значении параграфа. Значение поля очищается. При нажатии на
+        данные кнопки число, находящееся в параграфе, должно добавлять единицу или вычитать. </p>
+
+    <div id="app">
+        <h2>Total: {{total}} </h2>
+        <button class="btn btn-primary" @click="getTotal">Get Total</button><br>
+        <input class="form-control mb-5" @focusout="makeComponentsAr" v-model="componentCount"
+            placeholder="Enter how many components do you want to render and then unfocus to render" type="text">
+
+        <increament-decrement v-for="(component,i) in components" :key="i" @add-to-values="getTotal">
+        </increament-decrement>
+        <!-- <increament-decrement @add-to-values="getTotal"></increament-decrement> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

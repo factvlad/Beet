@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="search">
+        <form method="GET" action="#" class="search__form">
+            <label for="name">Movie Name</label>
+            <input name="title" value="Avengers" id="name" type="text" class="name">
+            <label for="type">Movie Zhanr</label>
+            <select name="type" id="type" class="type">
+                <option value="movie" class="type__option">movie</option>
+                <option value="series" class="type__option">series</option>
+                <option value="episode" class="type__option">episode</option>
+            </select>
+            <a target="_blank" href="localStorage.html">Show favourites</a><br>
+            <button type="button" onclick="search()">search</button>
+        </form>
+
+    </div>
+    <div class="result"></div>
+
+    <script src="scripts/jQuerry.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

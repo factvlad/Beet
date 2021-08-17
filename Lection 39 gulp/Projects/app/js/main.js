@@ -1,0 +1,1 @@
+console.log("JS is working!!");const img=document.querySelectorAll("img");for(let e=0;e<img.length;e++)img[e].addEventListener("click",function(){console.log(`Image ${e}`)});

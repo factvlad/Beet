@@ -1,0 +1,99 @@
+.contact {
+    background-color: $MainFontColor;
+    top: 0%;
+    position: absolute;
+    width: 770px;
+    height: 452px;
+    margin: 0 auto;
+    left: calc((100% - 770px) / 2);
+    top: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        height: 312px;
+        margin-top: 45px;
+        width: 662px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        .contact__container {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__title {
+        font-family: $ThirdFontFamily;
+        font-size: $MainFotSize;
+        color: $SecongFontColor;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        position: relative;
+        &::before {
+            @include border($SecongFontColor);
+            left: 37%;
+            top: -30px;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.info {
+    width: 55%;
+    &__item {
+        font-family: $SecondFontFamily;
+        font-size: 18px;
+        color: $SecongFontColor;
+        text-decoration: none;
+        margin-bottom: 40px;
+    }
+}
+.form {
+    width: 45%;
+    &__email {
+        display: flex;
+        flex-direction: column;
+    }
+    &__input {
+        width: 100%;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #d5d9de;
+        font-family: $SecondFontFamily;
+        font-size: 18px;
+        color: $SecongFontColor;
+        padding-bottom: 21px;
+        &:focus,
+        &:active {
+            outline: none;
+            border-bottom: 1px solid $SecongFontColor;
+        }
+        &::placeholder {
+            color: #d5d9de;
+        }
+    }
+}
+
+.submit-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    font-family: $SecondFontFamily;
+    font-size: 18px;
+    color: $SecongFontColor;
+}
+
+.color {
+    color: #7e5aff;
+}

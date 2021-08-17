@@ -1,0 +1,42 @@
+.container2 {
+    background-color: #00b3b3;
+    padding-left: $PaddingLeft;
+    @include _768 {
+        padding-left: 0;
+    }
+    // padding-left: 160px;
+}
+.about {
+    @include ContentFlex($ContentWidth, flex, row, space-around, center);
+    color: #ffffff;
+}
+.about {
+    &__img {
+        width: 45%;
+    }
+    &__raspberry {
+        width: 100%;
+        height: auto;
+    }
+}
+.descr {
+    &__title {
+        font-family: Raleway-Bold, sans-serif;
+        font-size: 3vw;
+        margin-bottom: 0;
+    }
+    &__text {
+        font-family: raleway-Light, sans-serif;
+        font-size: 17px;
+        line-height: 1.59em;
+        @include _768 {
+            font-size: 10px;
+        }
+    }
+}
+@include _768 {
+    .about {
+        @include ContentFlex($ContentWidth, flex, column, center, center);
+        text-align: center;
+    }
+}

@@ -1,0 +1,39 @@
+@mixin valueTop($content) {
+    content: $content;
+    position: absolute;
+    color: $heartColor;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+}
+
+@mixin valueBottom($content) {
+    content: $content;
+    position: absolute;
+    color: $heartColor;
+    right: 10px;
+    bottom: 10px;
+    font-size: 18px;
+}
+
+@mixin valueImageTop($content) {
+    content: $content;
+    position: absolute;
+    color: $heartColor;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+@mixin valueImageBottom($content) {
+    content: $content;
+    position: absolute;
+    color: $heartColor;
+    right: 10px;
+    bottom: 10px;
+    font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}

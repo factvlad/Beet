@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="tasks">
+            <!-- <button class="clear" onclick="clearConsole()">Очистить консоль -->
+            <!--(Не стандартная фича, может работать не у
+                всех, если не работает, не снимай баллы плизззззз))))-->
+            <!-- </button><br> -->
+
+            <form action="">
+                <fieldset>
+                    <legend>Task 1</legend>
+                    <p>1. Создать объект, описывающий автомобиль (производитель,
+                        модель, год выпуска,
+                        средняя скорость), и следующие функции для работы с этим объектом:
+
+                        Функция для вывода на экран информации об автомобиле;
+
+                        Функция для подсчета необходимого времени для преодоления переданного расстояния со средней
+                        скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1
+                        час.</p>
+                    <label for="manufacturer">Enter Manufacturer</label><br>
+                    <input type="text" value="Ferrari" id="manufacturer"><br>
+                    <label for="model">Enter model</label><br>
+                    <input type="text" value="F40" id="model"><br>
+                    <label for="manufacturerYear">Enter manufacturerYear</label><br>
+                    <input type="text" id="manufacturerYear" value="1987"><br>
+                    <label for="avgSpeed">Enter avgSpeed</label><br>
+                    <input type="text" value="120" id="avgSpeed"><br>
+                    <label for="distance">Enter distance</label><br>
+                    <input type="text" id="distance"><br>
+                    <button type="button" onclick="task1()">Click on me!</button><br>
+
+                    <textarea type="text" cols="30" rows="10" readonly placeholder="Object" id="car"></textarea> <br>
+                    <input type="text" readonly placeholder="Time" id="resultTask1">
+                </fieldset>
+            </form>
+
+            <fieldset>
+                <legend>Task 2</legend>
+                <p>2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и
+                    следующие функции для работы с этим объектом:
+
+                    Функция сложения 2-х объектов-дробей;
+
+                    Функция вычитания 2-х объектов-дробей;
+
+                    Функция умножения 2-х объектов-дробей;
+
+                    Функция деления 2-х объектов-дробей;
+
+                    Функция сокращения объекта-дроби.</p>
+                <label for="numerator"></label><br>
+                <input type="text" id="numerator" placeholder="Enter numerator"><br>
+                <label for="denominator"></label><br>
+                <input type="text" id="denominator" placeholder="Enter denominator"><br>
+                <button onclick="task2()">Click on me!!</button><br>
+                <textarea readonly id="resultTask2" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <form action="">
+                <fieldset>
+                    <legend> Task 3</legend>
+                    <p>3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции
+                        для работы с этим объектом:
+
+                        Функция вывода времени на экран;
+
+                        Функция изменения времени на переданное количество секунд;
+
+                        Функция изменения времени на переданное количество минут;
+
+                        Функция изменения времени на переданное количество часов.
+
+                        Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и
+                        другая.
+                        Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не
+                        «20:30:75».</p>
+                    <input type="text" id="hours" placeholder="Enter hours"> <span>+</span>
+                    <input type="text" id="addHours" placeholder="Enter hours"><br>
+                    <input type="text" id="minutes" placeholder="Enter minutes"><span> +</span>
+                    <input type="text" id="addMinutes" placeholder="Enter minutes"><br>
+                    <input type="text" id="seconds" placeholder="Enter seconds"><span> +</span>
+                    <input type="text" id="addSeconds" placeholder="Enter seconds"><br>
+                    <button type="button" onclick="task3()">Click on me!!</button><br>
+                    <textarea id="resultTask3" cols="30" rows="10"></textarea>
+                </fieldset>
+            </form>
+
+
+        </div>
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+.news {
+    height: 1035px;
+    background-image: url(images/Bg-news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+    overflow-x: hidden;
+    &__title {
+        margin-top: 40px;
+        color: $MainFontColor;
+        font-family: $ThirdFontFamily;
+        font-size: 44px;
+        margin-bottom: 96px;
+        position: relative;
+        &:before {
+            @include border($MainFontColor);
+            // content: "";
+            // position: absolute;
+            // width: 100px;
+            // height: 1px;
+            // background-color: $MainFontColor;
+            // z-index: 999;
+            // top: -40px;
+            // left: 35%;
+        }
+    }
+    &__container {
+        height: 615px;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+        @include _1300 {
+            max-width: 980px !important;
+        }
+        & .slick-dots {
+            position: absolute;
+            list-style: none;
+            bottom: 0%;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        & button {
+            @include dots;
+            margin-right: 39px;
+        }
+        & .slick-active button {
+            background-color: $MainFontColor;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        margin-top: -2.5%;
+    }
+    &__item {
+        max-width: 370px !important;
+        background-color: #ffffff;
+        margin-right: 30px;
+        height: 518px;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-around;
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            transition: 1s;
+        }
+        &:hover .plus {
+            display: block;
+        }
+        @include _1300 {
+            max-width: 300px !important;
+        }
+        // //margin-left: 15px;
+        // &--last {
+        //     //margin-right: 0;
+        // }
+    }
+    &__content {
+        margin-left: 23px;
+        margin-top: 30px;
+    }
+    &__name {
+        text-transform: uppercase;
+        font-family: $FirstFontFamily;
+        font-size: 22px;
+        line-height: 1.54em;
+        margin-bottom: 21px;
+        color: $SecongFontColor;
+        &:hover {
+            color: lighten($color: $SecongFontColor, $amount: 30);
+        }
+    }
+    &__descr {
+        font-size: $SmallFontSize;
+        color: #4b5562;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.67em;
+        margin-bottom: 40px;
+    }
+}
+.sign {
+    display: flex;
+    margin-bottom: 30px;
+    //justify-content: flex-end;
+    //flex-direction: column;
+
+    &__img {
+        margin-right: 20px;
+        padding-left: 23px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    &__name {
+        font-family: $SecondFontFamily;
+        color: $SecongFontColor;
+        font-size: $SmallFontSize;
+        text-transform: uppercase;
+    }
+    &__date {
+        font-family: $SecondFontFamily;
+        color: #55b7ff;
+        font-size: 14px;
+    }
+}
+.plus {
+    &-container {
+        position: relative;
+    }
+    //@include circle($diametr: 80px); // width: 80px
+    position: absolute;
+    font-size: 58px;
+    top: 33%;
+    left: 40%;
+    display: none;
+}
+.prev,
+.next {
+    @include circle($diametr: $Radius);
+    position: absolute;
+    top: 55%;
+    z-index: 999;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+.prev {
+    left: $ArrowsPosition;
+}
+.next {
+    right: $ArrowsPosition + 1%;
+}
+
+.prev {
+    @include _1600 {
+        left: $ArrowsPosition - 10%;
+    }
+}
+.next {
+    @include _1600 {
+        right: $ArrowsPosition - 10%;
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .news__container .slick-dots {
+        margin-left: -100%;
+    }
+}
+
+// .news .slick-active {
+//     margin-left: 15px;
+//     margin-right: 15px;
+// }

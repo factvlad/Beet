@@ -1,0 +1,72 @@
+/*1-st PSD File*/
+.wrapper{
+    max-width:1140px;
+    display:flex;
+    margin: 0 auto;
+    background-color: #1d1c1c;
+}
+.boxes{
+    flex: 1;
+    text-align: center;
+    margin: 86px 0 0 0;
+}
+@font-face {
+    font-family: Raleway; /* Имя шрифта */
+    src: url(fonts/Raleway-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+h2{
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 24px;
+}
+.description{
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 14px;
+}
+/*2-nd PSD File*/
+.wrapper-2{
+    max-width: 1170px;
+    background-image: url(background-img/background.jpg);
+    background-size: 100%;
+    display:flex;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: OpenSans; /* Имя шрифта */
+    src: url(fonts/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+.box-2{
+    flex: 1;
+    text-align: center;
+    margin: 120px 0 0 0;
+}   
+.title-2{
+    margin-bottom: 0;
+    padding: 0;
+}
+.description-2{
+    font-family: OpenSans;
+    font-size: 20px;
+    color:#f5f1f2;
+    margin: 50px 0 0 0;
+}
+.separator{
+    margin:20px 0 0 0 ;
+}
+.social{
+    margin:20px 20px 20px 20px;
+}
+@font-face {
+    font-family: OpenSans-SemiBold; /* Имя шрифта */
+    src: url(fonts/OpenSans-SemiBold.ttf); /* Путь к файлу со шрифтом */
+   }
+footer{
+    font-size: 15px;
+    font-family: OpenSans-SemiBold;
+    color:#ffffff;
+    margin:85px 0 38px 0;
+}
+.kasper{
+    color:#19c8fa;
+}

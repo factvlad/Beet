@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <form action="">
+            <fieldset>
+                <legend>Task 1</legend>
+                <p>1) Реализовать класс, описывающий окружность. В классе должны быть следующие компоненты:
+
+                    поле, хранящее радиус окружности;
+                    get-свойство, возвращающее радиус окружности;
+                    set-свойство, устанавливающее радиус окружности;
+                    get-свойство, возвращающее диаметр окружности;
+                    метод, вычисляющий площадь окружности;
+                    метод, вычисляющий длину окружности.
+                    Продемонстрировать работу свойств и методов. </p>
+                <label for="1">Enter Radius</label><br>
+                <input type="text" value="10" id="1"><br>
+                <label for="3">Enter value to change radius</label><br>
+                <input type="text" id="3"><br>
+                <button type="button" onclick="task1()"> Click on me </button><br>
+                <label for="5">The result of Task 1</label><br>
+                <textarea id="5" cols="60" rows="10"></textarea>
+            </fieldset>
+        </form>
+
+        <form action="">
+            <fieldset>
+                <legend>Task2</legend>
+                <p>2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
+
+                    поле, которое хранит цвет маркера;
+                    поле, которое хранит количество чернил в маркере (в процентах);
+                    метод для печати (метод принимает строку и выводит текст соответствующим цветом; текст выводится до
+                    тех пор, пока в маркере есть чернила; один не пробельный символ – это 0,5% чернил в маркере).
+                    Реализовать класс, описывающий заправляющийся маркер, унаследовав его от простого маркера и добавив
+                    метод для заправки маркера.
+
+                    Продемонcolorстрировать работу написанных методов. </p>
+                <label for="color">Enter color (can be #hex)</label><br>
+                <input type="color" value="цвет" id="color"><br>
+                <label for="ink">Enter ink (From 1 to 100)</label><br>
+                <input type="text" id="ink" value="70"><br>
+                <label for="textToFormat"> Enter text to format</label><br>
+                <textarea name="" id="textToFormat" cols="90"
+                    rows="10">"Як остопиздило купатися мені. Чи може іскупатися? Купатись чи не купатись? Блядські ці питання зайобують. То може, не вагаясь, спустити враз штани та батерфляєм хуярити, аж поки за буями в очах не потемніє? Ну а згодом? Про наслідки можливі не подумать? Один лиш тільки раз і вже крадеться піздець з своєю усмішкою хижой. Простуда, геморой, чіряк на сраці, запльована підлога, лікарі, від шприца гематоми і могила... На ній брудна Офелія вонюча та купка маргаріток, а під нею лежить той фраєр, що любив купатись. Такіє варіанти єбав я в рот і в носа. (Гамлєт харка у море і його дрючком пиздячить.)"</textarea><br>
+                <button type="button" onclick="marker()">Click to Format text</button><br>
+                <div id="markerText">
+
+                </div>
+            </fieldset>
+        </form>
+        <fieldset>
+            <legend>Task 3</legend>
+            <label for="empList">Введіть список співробітників (кожен з нового рядка)</label><br>
+            <textarea id="empList" cols="70" rows="10">
+Дарт Вейдер
+Геральт из Ривии
+Гомер Симпсон
+Залупа Хуйбердиєв
+Гамлєт дацький кацап</textarea><br>
+            <button type="button" onclick="employee()">Вивести список співробітників</button> <br>
+            <div id="employee"></div>
+        </fieldset>
+    </main>
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>

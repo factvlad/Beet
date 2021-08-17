@@ -1,0 +1,183 @@
+@font-face {
+    font-family: lucida-sans-unicode;
+    src: url(fonts/lucida-sans-unicode.woff);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: lucida-grande;
+    src: url(fonts/lucida-grande.woff);  /*Не нашел шрифт в woff формате*/
+   }
+*{transition: all .1s ease-in;}
+
+*{
+    box-sizing: border-box;
+} 
+
+body{
+    background-image: url(images/fon.jpg);
+}
+/* main{
+    background-color: #3399CC;
+    margin:20px;  
+} */
+.wrapper{
+    text-align: left;
+    margin:25px 215px ;
+}
+.radio{
+    text-align: center;
+}
+.radio>p{
+    font-size: 16px;
+    font-family: lucida-sans-unicode,lucida-grande;
+}
+h1{
+    color:black;
+    font-family: lucida-grande;
+    /* margin:25px 215px ; */
+    padding-top:20px;
+    font-size: 24px;
+}
+ul{
+    /* margin:25px 215px ; */
+    list-style-type: none;
+    font-size: 0;
+    margin:0 auto;
+    padding: 0;
+    background-color: #ffffff;
+}
+li{
+    display:inline-block;
+    font-family: lucida-sans-unicode,lucida-grande;
+    color:black;
+    font-size: 20px;
+     /* border:6px solid #ffffff;  */
+    text-align: center;
+    padding-top: 15px;
+}
+li>p{
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 20px;
+    font-family: lucida-sans-unicode,lucida-grande;
+}
+.li-1{
+    width: 50%;
+    /* background-color: #3399CC;   */
+    background-image: url(images/Novigrad.jpg);
+    background-size: 100%;
+    font-family: lucida-sans-unicode,lucida-grande;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-left: 6px solid #ffffff;
+}
+.li-2{
+    width: 25%;
+    /* background-color: #33CCCC; */
+    background-image: url(images/Vizima.png);
+    background-size: 100%;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-3{
+    width: 25%;
+    background-image: url(images/Novigrad.jpg);
+    background-size: 100%;  
+    border-bottom: 3px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    border-top: 6px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-4{
+    width: 25%;
+    background-image: url(images/Kovir.jpg);
+    background-size: 100%;  
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 6px solid #ffffff;
+}
+.li-5{
+    width: 25%;
+    background-image: url(images/Tretogor.png);
+    background-size: 100%;  
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-6{
+    width: 25%;
+    background-image: url(images/Cintra.jpg);
+    background-size: 100%;  
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-7{
+    width: 25%;
+    background-image: url(images/Vengerberg.jpg);
+    background-size: 100%;  
+    border-bottom: 3px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-8{
+    width: 25%;
+    background-image: url(images/rivia.jpg);
+    background-size: 100%; 
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 6px solid #ffffff;
+}
+.li-9{
+    width: 50%;
+    background-image: url(images/bockler.png);
+    background-size: 100%; 
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-10{
+    width: 25%;
+    background-image: url(images/Oksenfurt.png);
+    background-size: 100%; 
+    border-bottom: 3px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+}
+.li-11{
+    width: 100%;
+    background-image: url(images/kaer-trolde.jpg);
+    background-size: 100%; 
+    border-bottom: 6px solid #ffffff;
+    border-right: 6px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    border-left: 6px solid #ffffff;
+}
+footer{
+    font-size: 16px;
+    font-family: lucida-sans-unicode,lucida-grande;
+    color: #ffffff;
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+ul:hover li:not(:hover){
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    opacity:0.7;
+}
+label{
+    font-size: 18px;
+    color:rgb(0, 0, 0);
+    font-family: lucida-sans-unicode,lucida-grande;
+}
+
+
+

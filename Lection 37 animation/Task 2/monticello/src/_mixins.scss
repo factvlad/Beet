@@ -1,0 +1,52 @@
+@mixin dots {
+    font-size: 0;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    border: 0;
+    margin-right: 10px;
+    z-index: 9;
+    left: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($color: $MainFontColor, $amount: 50);
+        border-color: darken($color: $MainFontColor, $amount: 50);
+    }
+}
+
+@mixin circle($diametr) {
+    width: $diametr;
+    height: $diametr;
+    border-radius: 50%;
+    //position: absolute;
+    border: 1px solid $MainFontColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $MainFontColor;
+}
+
+@mixin _1600 {
+    @media screen and (max-width: 1600px) {
+        @content;
+    }
+}
+@mixin _1300 {
+    @media screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin border($Color) {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: $Color;
+    z-index: 999;
+    top: -40px;
+    left: 35%;
+    z-index: 1;
+}

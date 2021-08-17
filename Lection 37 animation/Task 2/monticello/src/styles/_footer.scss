@@ -1,0 +1,37 @@
+.footer {
+    height: 524px;
+    background-image: url(images/bg-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    &__container {
+        width: 757px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        //justify-content: space-between;
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 42px;
+    }
+    &__copyright {
+        color: $MainFontColor;
+        font-family: $SecondFontFamily;
+        font-size: 14px;
+    }
+}
+.copy-item1 {
+    padding-right: 21px;
+    border-right: 1px solid $MainFontColor;
+}
+.copy-item2 {
+    margin-left: 21px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geocoding service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="map">
+    </div>
+    <div class="destinations">
+        <div class="points">
+            <div class="dest-start">
+                <label for="start">Enter first destination point</label><br>
+                <input id="start" value="Село Борщі" type="text"><br>
+            </div>
+            <div class="dest-end">
+                <label for="start">Enter final destination point</label><br>
+                <input id="end" value="Ширяево, Одеська область" type="text">
+            </div>
+        </div>
+        <button type="button" id="route">Проложить маршрут</button>
+    </div>
+    <script src="script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3wn72BTYrQaZqRobChO4SYOoctZ1Yzxo&callback=initMap&libraries=&v=weekly"
+        async defer>
+        </script>
+</body>
+
+</html>

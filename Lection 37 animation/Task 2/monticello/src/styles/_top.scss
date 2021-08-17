@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.main {
+    position: relative;
+    overflow-x: hidden;
+}
+.slider .top {
+    //height: $height;
+    background-image: url(images/bg-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    //width: 100% !important;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $MainFontColor;
+    flex-direction: column;
+    //z-index: 999;
+    text-align: center;
+    flex-direction: column;
+
+    &__title {
+        text-align: center;
+    }
+    &__name {
+        font-size: 80px;
+        font-family: $FirstFontFamily, sans-serif;
+        letter-spacing: 0.05em;
+    }
+    &__descr {
+        font-size: 18px;
+        font-family: $SecondFontFamily, sans-serif;
+        letter-spacing: 0.3em;
+    }
+    &__down {
+        @include circle($diametr: $Radius);
+        margin-bottom: 49px;
+        color: #fff;
+        &-nav {
+            margin-bottom: 0;
+            margin-right: 21px;
+        }
+        &-nav:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+#top .slick-dots {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    bottom: calc(50% - (15px * 5));
+    right: 0;
+    border: 0;
+    margin-right: 40px;
+    height: 205px;
+    & button {
+        @include dots;
+        &:focus {
+            border: none;
+        }
+    }
+    & .slick-active button {
+        background-color: white;
+        border: 1px solid #fff;
+        outline: none;
+    }
+}
+a:link,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    //color: #000;
+}
+
+// .top-slider .top {
+//     height: 100vh;
+//     width: 100vw;
+// }

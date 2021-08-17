@@ -1,0 +1,65 @@
+.menu {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+
+    &__item1,
+    &__item3,
+    &__item4,
+    &__item6 {
+        width: 28.64%;
+    }
+    &__item2,
+    &__item5 {
+        width: 41.67%;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__item1,
+    &__item2,
+    &__item3,
+    &__item4,
+    &__item5,
+    &__item6 {
+        margin-bottom: 0.7%;
+        position: relative;
+        @include _768 {
+            width: 49.4%;
+            margin-bottom: 0.7%;
+            margin-right: 0.3%;
+        }
+        @include _576 {
+            margin: 0 auto;
+            width: 80%;
+            margin-bottom: 0.7%;
+        }
+    }
+    &__item2 {
+        @include _768 {
+            order: 4;
+            height: 120%;
+        }
+    }
+    &__item5 {
+        @include _768 {
+            order: 3;
+            height: 120%;
+        }
+    }
+
+    &__sign {
+        position: absolute;
+        top: 65%;
+        left: 7%;
+        font-family: lato-bold, sans-serif;
+        color: #ffffff;
+        font-size: 2.5vw;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        @include _576 {
+            top: 50%;
+            left: 43%;
+        }
+    }
+}

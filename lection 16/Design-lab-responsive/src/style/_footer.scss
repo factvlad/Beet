@@ -1,0 +1,41 @@
+.footer {
+    &-container {
+        text-align: center;
+        @include svg-container(7%, 11%);
+    }
+    &__logo {
+        @include svg(50%);
+        left: -18%;
+        vertical-align: middle;
+        &-1,
+        &-2 {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        &-1 {
+            stroke: #000;
+        }
+
+        &-1,
+        &-2,
+        &-3 {
+            fill-rule: evenodd;
+        }
+
+        &-2 {
+            stroke: #000000;
+        }
+        &-3,
+        &-4 {
+            fill: #000;
+        }
+    }
+    &__text {
+        font-size: 2vw;
+        vertical-align: middle;
+        position: absolute;
+        left: 36%;
+        top: 12%;
+    }
+}

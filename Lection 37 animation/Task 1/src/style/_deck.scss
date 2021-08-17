@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.deck {
+    &__suit {
+        display: flex;
+    }
+    &__container {
+        position: relative;
+    }
+    &__item {
+        background-color: transparent;
+        width: 160px;
+        height: 250px;
+        perspective: 1000px;
+
+        &:hover .deck__card {
+            transform: rotateY(180deg);
+        }
+        // .deck__card {
+        //     transform: rotateY(180deg);
+        // }
+    }
+    &__item + &__item {
+        margin-left: 15px;
+    }
+    &__card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        // transform: rotateY(180deg);
+    }
+    &__front,
+    &__back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    &__front {
+        background-color: #2980b9;
+        color: black;
+    }
+
+    &__back {
+        background-color: #bbb;
+        color: white;
+        transform: rotateY(180deg);
+        display: flex;
+        height: 250px;
+        // flex-direction: column;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        padding: 30px 0;
+        &:before {
+            @include valueTop("6");
+        }
+        &:after {
+            @include valueBottom("6");
+        }
+        &--seven {
+            &:before {
+                @include valueTop("7");
+            }
+            &:after {
+                @include valueBottom("7");
+            }
+        }
+        &--eight {
+            &:before {
+                @include valueTop("8");
+            }
+            &:after {
+                @include valueBottom("8");
+            }
+        }
+        &--nine {
+            &:before {
+                @include valueTop("9");
+            }
+            &:after {
+                @include valueBottom("9");
+            }
+        }
+        &--ten {
+            &:before {
+                @include valueTop("10");
+            }
+            &:after {
+                @include valueBottom("10");
+            }
+        }
+        &--jack {
+            &:before {
+                @include valueImageTop("J   " + "\f004");
+            }
+            &:after {
+                @include valueImageBottom("J   " + "\f004");
+            }
+            &--diamond {
+                &:before {
+                    @include valueImageTop("J   " + "\2666");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("J   " + "\2666");
+                    font-size: 30px;
+                }
+            }
+            &--club {
+                &:before {
+                    @include valueImageTop("J   " + "\2663");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("J   " + "\2663");
+                    font-size: 30px;
+                }
+            }
+            &--spades {
+                &:before {
+                    @include valueImageTop("J   " + "\2660");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("J   " + "\2660");
+                    font-size: 30px;
+                }
+            }
+        }
+        &--queen {
+            &:before {
+                @include valueImageTop("Q   " + "\f004");
+            }
+            &:after {
+                @include valueImageBottom("Q   " + "\f004");
+            }
+            &--diamond {
+                &:before {
+                    @include valueImageTop("Q   " + "\2666");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("Q   " + "\2666");
+                    font-size: 30px;
+                }
+            }
+            &--club {
+                &:before {
+                    @include valueImageTop("Q   " + "\2663");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("Q   " + "\2663");
+                    font-size: 30px;
+                }
+            }
+            &--spades {
+                &:before {
+                    @include valueImageTop("Q   " + "\2660");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("Q   " + "\2660");
+                    font-size: 30px;
+                }
+            }
+        }
+        &--king {
+            &:before {
+                @include valueImageTop("K   " + "\f004");
+            }
+            &:after {
+                @include valueImageBottom("K   " + "\f004");
+            }
+            &--diamond {
+                &:before {
+                    @include valueImageTop("K   " + "\2666");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("K   " + "\2666");
+                    font-size: 30px;
+                }
+            }
+            &--club {
+                &:before {
+                    @include valueImageTop("K   " + "\2663");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("K   " + "\2663");
+                    font-size: 30px;
+                }
+            }
+            &--spades {
+                &:before {
+                    @include valueImageTop("K   " + "\2660");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("K   " + "\2660");
+                    font-size: 30px;
+                }
+            }
+        }
+        &--ace {
+            &:before {
+                @include valueImageTop("A   " + "\f004");
+            }
+            &:after {
+                @include valueImageBottom("A    " + "\f004");
+            }
+            &--diamond {
+                &:before {
+                    @include valueImageTop("A   " + "\2666");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("A   " + "\2666");
+                    font-size: 30px;
+                }
+            }
+            &--club {
+                &:before {
+                    @include valueImageTop("A   " + "\2663");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("A   " + "\2663");
+                    font-size: 30px;
+                }
+            }
+            &--spade {
+                &:before {
+                    @include valueImageTop("A   " + "\2660");
+                    font-size: 30px;
+                }
+                &:after {
+                    @include valueImageBottom("A   " + "\2660");
+                    font-size: 30px;
+                }
+            }
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        &--black {
+            &:before {
+                color: $secondColor;
+            }
+            &:after {
+                color: $secondColor;
+            }
+        }
+        &--black .deck__svg {
+            fill: $secondColor;
+            stroke: $secondColor;
+        }
+        &--black .ace {
+            color: $secondColor;
+        }
+    }
+    &__svg {
+        fill: $heartColor;
+        stroke: $heartColor;
+        height: 230px;
+        text-align: left;
+        display: flex;
+        padding-top: 10px;
+    }
+    &__use {
+        height: 230px;
+        //transform: scale(1.2);
+    }
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-between;
+    color: red;
+    &__icon {
+        &--diamond,
+        &--club,
+        &--spades {
+            font-size: 33px;
+        }
+        &--club,
+        &--spades {
+            color: $secondColor;
+        }
+    }
+    &--ace {
+        width: 50px;
+        height: 50px;
+    }
+}
+.is-visible {
+    opacity: 1;
+}
+
+.empty {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.ace {
+    font-size: 60px;
+}
+.animate {
+    &__backInUp {
+        animation-name: backInUp, flash;
+        animation-delay: 0.5s, 1.5s;
+    }
+    &__backInDown {
+        animation-name: backInDown, flash;
+        animation-delay: 0.5s, 1.5s;
+    }
+    &__heartBeat {
+        animation-iteration-count: infinite;
+    }
+}

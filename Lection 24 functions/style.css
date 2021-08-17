@@ -1,0 +1,18 @@
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.tasks {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    margin-right: 100px;
+}
+button {
+    width: 400px;
+}
+.clear {
+    background-color: rgb(126, 158, 9);
+}

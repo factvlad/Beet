@@ -1,0 +1,33 @@
+h1{
+    background-color: #660000;
+    text-align: center;
+    color: #FAFCFE;
+}
+p{
+    font-size: 18px;
+}
+footer{
+    font-size: 20;
+    text-align: center;
+    background-color: #000000;
+    color: #FAFCFE;
+}
+.img {
+    margin: auto; 
+    display: flex;
+  }
+
+.div {
+    text-align: center;
+  }
+.border{
+    border-style: dashed;
+}
+.color-blue{
+    color: #003C97;
+    font-style: italic;
+    font-weight: bold;
+}
+.color-blue2{
+    color: #151BFF;
+}

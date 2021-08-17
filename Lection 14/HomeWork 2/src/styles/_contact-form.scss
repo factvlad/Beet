@@ -1,0 +1,153 @@
+.block-7{
+    background-image: url(images/bg.jpg);
+    max-height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.fuck-contact{
+    text-align: center;
+    color: #262626;
+}
+.fuck-contact__h1{
+    font-family: Raleway-Bold,sans-serif;
+    font-size: 90px;
+    padding-top: 90px;
+    margin: 0;
+}
+.fuck-contact__description{
+    font-family: raleway-Light,sans-serif;
+    font-size: 17px;
+    line-height: 1.47em;
+    margin-bottom: 45px;
+}
+.fuck-container{
+    display: flex;
+    /* justify-content: center;  */
+    align-items: flex-start;
+    height: 100%;
+    margin-bottom: 120px;
+    text-align: center;
+}
+.fuck-sectionform{
+    margin: 0 165px;
+    flex: 1;
+}
+.fuck-input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #4dc6d0;
+    padding-left: 19px;
+    font-family: Raleway-Bold,sans-serif;
+    color:#ffffff; 
+}
+.fuck-input:-webkit-autofill,
+.fuck-input:-webkit-autofill:hover, 
+.fuck-input:-webkit-autofill:focus
+ {
+  -webkit-text-fill-color: #ffffff;
+  box-shadow: 0 0 0px 1000px #4dc6d0 inset;
+}
+.fuck-submit{
+    width: 80%;
+    text-align: center;
+    height: 50px;
+    background-color: #4E9AF1;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Raleway-Light,sans-serif;
+    cursor: pointer;
+}
+.fuck-submit:hover{
+    width:100%;
+    transition: 0.5s;
+    background-color: #D35400;
+}
+.fuck-submit:active{
+    background-color: #5c2c0d;
+    outline: none;
+}
+.fuck-input::placeholder, textarea::placeholder {
+    color:#ffffff;
+    font-size: 15px;
+    line-height: 1.67em;
+    font-family: raleway-Light,sans-serif;
+}
+.fuck-textarea{
+    min-height:250px;
+    resize: none;
+    padding-top: 15px;
+}
+.fuck-input:focus::placeholder{
+    color: transparent;
+}
+.fuck-input:focus{
+    border: none;
+    border-left: 5px solid #355b82;   
+    outline: none;
+    color:#ffffff; 
+}
+.fuck-input:valid {
+    border: 2px solid green;
+  }
+.fuck-input:invalid {
+    border: 2px solid red;
+  }  
+.fuck-info{
+    flex:1;
+    color: #262626;
+    text-align: left;
+}
+.fuck-info__name{
+    font-size: 17px;
+    font-family: Raleway-Bold,sans-serif;
+    line-height: 1.47em;
+}
+.fuck-info__content{
+    font-size: 20px;
+    font-family: raleway-Light,sans-serif;
+    line-height: 1.25em;
+}
+.fuck-footer{
+    background-color: #262626;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#b9b9b9;
+    margin-top: -18px;
+}
+.fuck-footer__p1{
+    font-family: raleway-Light,sans-serif;
+    font-size: 16px;
+}
+.fuck-footer__p2{
+    font-family: pacifico-regular,sans-serif;
+    font-size: 25px;
+}
+.fuck-footer__p3{
+    font-family: raleway-Light,sans-serif;
+    font-size: 15px;
+}
+.fuck-footer__p3>span{
+    font-family: Raleway-Bold,sans-serif;
+    color:#ff2b58;
+}
+.fuck-select {
+    margin: 50px;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #4E9AF1;
+    position: relative;
+    background: url(https://stackoverflow.com/favicon.ico) 96% / 15% no-repeat #4E9AF1;
+  }

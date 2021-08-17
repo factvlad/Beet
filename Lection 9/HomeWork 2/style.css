@@ -1,0 +1,125 @@
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(fonts/ProximaNovaRegular.otf);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: PlayfairDisplayRegular;
+    src: url(fonts/PlayfairDisplay-Regular.woff);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: FuturaPTHeavy;
+    src: url(fonts/FuturaPT-Heavy.woff);  /*Не нашел шрифт в woff формате*/
+   }  
+*{
+    box-sizing: border-box;
+} 
+body{
+    max-width: 1200px;
+    background-color: #464f53;
+    margin: 0 auto;
+}
+.warper{
+    background-color: #ffffff;
+    margin: 149px 70px;
+}
+main{
+    max-width: 1060px;
+    position: relative;
+    box-shadow: 0 0 60px rgba(0,0,0,0.5);
+}
+header{
+    font-size: 0;
+    width: 71.5%;
+    position: absolute;
+    margin: -72px 0px 0 287px
+}
+.title{
+    background-color: #181818;   
+    color:#ffffff;  
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width:100%;
+    text-align: left;
+    font-size: 20px;
+}
+.h1{
+    margin: 0 0 0 0;
+    padding: 0;
+}
+.h1-p{
+    margin: 0 0 0 65px;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
+    letter-spacing: 0.32em;
+    color:#767676;
+}
+hr{
+    margin: 0;
+    margin-left: 65px;
+    bottom: 30px;
+    border:1px solid #303030;
+    margin-bottom: 15px;
+}
+input{
+    width: 100%;
+    background-color: #181818;
+    color:#fefefe;
+    margin: 0 0 0 0;
+    display: inline;
+    border-style: none;
+    height: auto;
+    box-sizing: border-box;
+    padding-left: 65px;
+    font-size: 48px;
+    font-family: PlayfairDisplayRegular,sans-serif;
+    font-size: 48px;
+}
+.menu{
+    background-color: #f6bc2c;
+    margin:0px 0 0 64px; 
+    padding: 0;
+    padding:22px 40px;
+}
+img{
+    margin:0 11.5px;
+}
+.line{
+    margin: 0 60px;  
+    border-left: 1px solid #e8eced;
+}
+.main-text{ 
+    margin:0 0px;
+    padding:200px 60px;
+    font-size: 0;
+}
+h2{
+    color:#2a2a2a;
+    font-size: 77.93px;
+    letter-spacing: 0.053em;
+    font-family: FuturaPTHeavy,sans-serif;
+    margin:0;
+    margin-bottom: -10px;
+}
+.h3{
+    font-size: 30px;
+    font-family: Georgia,sans-serif;
+    color:#8f8f8f;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+section>p{
+    font-size: 26.92px;
+    font-family: Georgia,sans-serif;
+    line-height: 1.5;
+}
+section>p:nth-child(1){
+   font-family: ProximaNovaRegular; 
+   color:#b4b4b4;
+   font-size: 19.84px;
+   letter-spacing: 0.219em;
+}
+span{
+    font-style: italic;
+}

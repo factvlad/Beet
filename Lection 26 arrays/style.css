@@ -1,0 +1,22 @@
+input {
+    margin: 10px 0;
+}
+button {
+    margin-bottom: 10px;
+}
+.task {
+    display: flex;
+    width: 100%;
+}
+.task4 {
+    flex-wrap: wrap;
+}
+.task4 > fieldset {
+    width: 30%;
+}
+.sortField {
+    width: 46% !important;
+}
+select {
+    margin-bottom: 10px;
+}

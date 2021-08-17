@@ -1,0 +1,189 @@
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway-Bold.ttf);
+   }
+@font-face {
+    font-family: raleway-heavy;
+    src: url(fonts/raleway-heavy.woff);
+   }
+@font-face {
+    font-family: raleway-Light;
+    src: url(fonts/Raleway-Light.ttf);
+   }
+@font-face {
+    font-family: pacifico-regular;
+    src: url(fonts/pacifico-regular.woff2);
+   }
+*{
+    box-sizing: border-box;
+}
+body{
+    min-width: 1500px;
+    margin: 0 auto;
+}
+main{
+
+    background-image: url(images/bg.jpg);
+    max-height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact{
+    text-align: center;
+    color: #262626;
+}
+.contact__h1{
+    font-family: Raleway-Bold,sans-serif;
+    font-size: 90px;
+    padding-top: 90px;
+    margin: 0;
+}
+.contact__description{
+    font-family: raleway-Light,sans-serif;
+    font-size: 17px;
+    line-height: 1.47em;
+    margin-bottom: 45px;
+}
+
+.container{
+    display: flex;
+    /* justify-content: center;  */
+    align-items: flex-start;
+    height: 100%;
+    margin-bottom: 120px;
+    text-align: center;
+}
+.sectionform{
+    margin: 0 165px;
+    flex: 1;
+}
+.input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #4dc6d0;
+    padding-left: 19px;
+    font-family: Raleway-Bold,sans-serif;
+    color:#ffffff; 
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover, 
+.input:-webkit-autofill:focus
+ {
+  -webkit-text-fill-color: #ffffff;
+  box-shadow: 0 0 0px 1000px #4dc6d0 inset;
+}
+.submit{
+    width: 80%;
+    text-align: center;
+    height: 50px;
+    background-color: #4E9AF1;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Raleway-Light,sans-serif;
+    cursor: pointer;
+}
+.submit:hover{
+    width:100%;
+    transition: 0.5s;
+    background-color: #D35400;
+}
+.submit:active{
+    background-color: #5c2c0d;
+    outline: none;
+}
+.input::placeholder, textarea::placeholder {
+    color:#ffffff;
+    font-size: 15px;
+    line-height: 1.67em;
+    font-family: raleway-Light,sans-serif;
+}
+.textarea{
+    min-height:250px;
+    resize: none;
+    padding-top: 15px;
+}
+.input:focus::placeholder{
+    color: transparent;
+}
+.input:focus{
+    border: none;
+    border-left: 5px solid #355b82;   
+    outline: none;
+    color:#ffffff; 
+}
+.input:valid {
+    border: 2px solid green;
+  }
+.input:invalid {
+    border: 2px solid red;
+  }  
+.info{
+    flex:1;
+    color: #262626;
+    text-align: left;
+}
+.info__name{
+    font-size: 17px;
+    font-family: Raleway-Bold,sans-serif;
+    line-height: 1.47em;
+}
+.info__content{
+    font-size: 20px;
+    font-family: raleway-Light,sans-serif;
+    line-height: 1.25em;
+}
+.footer{
+    background-color: #262626;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#b9b9b9;
+    margin-top: -18px;
+}
+.footer__p1{
+    font-family: raleway-Light,sans-serif;
+    font-size: 16px;
+}
+.footer__p2{
+    font-family: pacifico-regular,sans-serif;
+    font-size: 25px;
+}
+.footer__p3{
+    font-family: raleway-Light,sans-serif;
+    font-size: 15px;
+}
+.footer__p3>span{
+    font-family: Raleway-Bold,sans-serif;
+    color:#ff2b58;
+}
+select {
+    margin: 50px;
+    width: 150px;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #4E9AF1;
+    position: relative;
+    background: url(https://stackoverflow.com/favicon.ico) 96% / 15% no-repeat #4E9AF1;
+  }
+  select::-ms-expand {
+    display: none; /* Remove default arrow in Internet Explorer 10 and 11 */
+}
+
+/* Target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}

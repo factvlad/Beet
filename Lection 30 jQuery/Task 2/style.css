@@ -1,0 +1,38 @@
+button {
+    cursor: pointer;
+}
+.container {
+    width: 305px;
+    display: flex;
+
+    /* background-color: aqua; */
+}
+.enter {
+    width: 295px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.container__numbers {
+    display: flex;
+    flex-wrap: wrap;
+}
+.number,
+.clean {
+    width: 30%;
+    border: 1px solid;
+}
+.container__actions {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 50px; */
+}
+.action,
+.equal {
+    width: 45%;
+    height: 50px;
+}
+.action,
+.equal {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}

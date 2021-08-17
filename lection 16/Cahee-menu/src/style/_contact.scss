@@ -1,0 +1,185 @@
+.container7 {
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-height: 100%;
+
+    // @include ContentFlex(initial, flex, column, space-between, center);
+}
+.contact {
+    &-header {
+        text-align: center;
+        color: #262626;
+        &__title {
+            font-family: Raleway-Bold, sans-serif;
+            font-size: 5vw;
+            padding-top: 8%;
+            margin: 0;
+            @include _768 {
+                font-size: 3vh;
+            }
+        }
+        &__descr {
+            font-family: raleway-Light, sans-serif;
+            font-size: 1vw;
+            line-height: 1.47em;
+            margin-bottom: 4%;
+            @include _768 {
+                font-size: 1.5vh;
+            }
+        }
+    }
+    &-info {
+        flex: 1;
+        &__name {
+            font-size: 1vw;
+            font-family: Raleway-Bold, sans-serif;
+            line-height: 1.47em;
+        }
+        &__descr {
+            font-size: 1vw;
+            font-family: raleway-Light, sans-serif;
+            line-height: 1.25em;
+        }
+        @include _768 {
+            text-align: center;
+        }
+        &__name,
+        &__descr {
+            @include _768 {
+                font-size: 2vh;
+            }
+        }
+    }
+    &-content {
+        @include ContentFlex($ContentWidth, flex, row, center, null);
+        width: 100%;
+        margin: 0 auto;
+        @include _768 {
+            @include ContentFlex(initial, flex, column, center, center);
+        }
+    }
+    &-form {
+        width: 60%;
+        text-align: center;
+        display: block;
+        margin-bottom: 25%;
+        @include _768 {
+            margin-bottom: 0;
+        }
+        &__input,
+        &__textarea {
+            background-color: #78dad9;
+            width: $ContactItemWidth;
+            outline: none;
+            border: none;
+            color: #ffffff;
+            padding-left: 2%;
+            &::placeholder {
+                color: #ffffff;
+                font-size: 1vw;
+                line-height: 1.67em;
+                font-family: raleway-Light, sans-serif;
+                @include _768 {
+                    padding: 0;
+                    font-size: 2vh;
+                }
+            }
+            &:focus {
+                border: none;
+                border-left: 5px solid #355b82;
+                outline: none;
+                color: #ffffff;
+                &::placeholder {
+                    color: transparent;
+                }
+            }
+            &:valid {
+                border: 2px solid green;
+            }
+            &:invalid {
+                border: 2px solid red;
+            }
+        }
+        &__input {
+            height: 20%;
+            margin-bottom: 1.5%;
+            @include _768 {
+                height: 5vh;
+                font-size: 2vh;
+                padding: 10px 2%;
+            }
+        }
+        &__textarea {
+            height: 100%;
+            resize: none;
+            @include _768 {
+                height: 24vh;
+                font-size: 2vh;
+            }
+        }
+        &__submit {
+            width: $ContactItemWidth - 10%;
+            text-align: center;
+            height: 30%;
+            background-color: #4e9af1;
+            border-radius: 40px;
+            color: #ffffff;
+            font-size: 1.2vw;
+            font-family: Raleway-Light, sans-serif;
+            cursor: pointer;
+            margin-top: 2%;
+            &:hover {
+                width: $ContactItemWidth;
+                transition: 0.5s;
+                background-color: #d35400;
+            }
+            &:active {
+                background-color: #5c2c0d;
+                outline: none;
+            }
+            @include _768 {
+                padding: 10px 26px;
+                width: 90%;
+                font-size: 1.3vh;
+            }
+        }
+    }
+    &-info {
+        width: 30%;
+    }
+}
+.footer {
+    background-color: #262626;
+    @include ContentFlex(initial, flex, row, space-around, null);
+    padding: 1% 0;
+    &__p1,
+    &__p2,
+    &__p3 {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+    &__p1 {
+        font-family: raleway-Light, sans-serif;
+        font-size: 1vw;
+        padding-bottom: 0;
+    }
+    &__p2 {
+        font-family: pacifico-regular, sans-serif;
+        font-size: 2vw;
+    }
+
+    &__p3 {
+        font-family: raleway-Light, sans-serif;
+        font-size: 1vh;
+    }
+    &__love {
+        font-family: Raleway-Bold, sans-serif;
+        color: #ff2b58;
+    }
+    @include _768 {
+        color: #fff;
+    }
+}

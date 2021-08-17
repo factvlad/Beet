@@ -1,0 +1,54 @@
+@mixin flex($flex-direction: row, $justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+@mixin fieldset($color: #000) {
+    text-align: center;
+    // margin: 10% 0;
+    color: $color;
+    &__legend {
+        font-family: lato-bold, sans-serif;
+        font-size: 3vw;
+        letter-spacing: 0.16em;
+        padding: 0 15%;
+    }
+    &__text {
+        font-family: lato-light, sans-serif;
+        font-size: 1vw;
+        line-height: 1.5em;
+        @include _768 {
+            font-size: 2vw;
+        }
+    }
+}
+
+@mixin svg-container($PaddingBottom, $MarginTop) {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0;
+    padding-bottom: $PaddingBottom;
+    margin-top: $MarginTop;
+}
+
+@mixin svg($Height: 100%) {
+    position: absolute;
+    height: $Height;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+@mixin _768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _576 {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}

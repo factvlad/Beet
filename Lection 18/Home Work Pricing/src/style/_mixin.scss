@@ -1,0 +1,32 @@
+@mixin _400 {
+    @media screen and (max-width: 400px) {
+        @content;
+    }
+}
+@mixin _768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+@mixin _992 {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+@mixin _1200 {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+// @mixin _IE($IEViewMax) {
+//     font-size: calc($IEViewMax * (1vw + 1vh - 1vmin));
+// }
+@function _ie($value) {
+    $font-size: calc(#{$value} * (1vw + 1vh - 1vmin));
+    @return #{$font-size};
+}
+
+// @function rem-calc($font-size: 0) {
+//     $remSize: $font-size / 1;
+//     @return #{$remSize}rem;
+// }

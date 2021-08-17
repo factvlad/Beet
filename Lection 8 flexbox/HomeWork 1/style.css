@@ -1,0 +1,67 @@
+@font-face {
+    font-family: miso-bold;
+    src: url(fonts/miso-bold.ttf);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: miso;
+    src: url(fonts/miso.woff);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: lato-light;
+    src: url(fonts/lato-light.woff);  /*Не нашел шрифт в woff формате*/
+   }
+html { position: absolute; top: 0; bottom: 0; left: 0; right: 0; } 
+body{
+    background-color: #fdde7e;
+    min-height: 100%;
+
+}
+.warper{
+    /* max-width: 1200px;
+    max-height: 600px; */
+    display:flex;
+    margin:0;
+    padding: 0; 
+    justify-content: center;
+    align-items:center;
+    min-height: 100%;
+}
+section{
+    background-color: #ffffff;
+    margin:29px 15px 19px 15px;
+    width:360px;
+    text-align: center;
+    /* max-height: 442px; */
+}
+.cofee{
+    position: absolute;
+    margin-left: -94px;
+    margin-top: 15px;
+}
+figure>div{
+    margin-left:-21px;
+}
+figcaption{
+   margin: 30px 0; 
+   font-family: miso;
+   font-size: 56px;
+   color: #333333;
+}
+h2{
+    margin:30px 0 20px 0;
+    color:#02995b;
+    font-size: 70px;
+    font-family: miso-bold;
+}
+p{
+    font-size: 20px;
+    font-family: lato-light;
+    padding:0;
+    margin:0;
+    padding-bottom: 35px;
+    color:#4e4e4e;
+}
+section:hover{
+    transform: scale(1.1, 1.1);
+}
+

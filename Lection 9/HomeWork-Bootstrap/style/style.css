@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Asap-Bold;
+    src: url(../fonts/Asap-Bold.woff2);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: Asap-Regular;
+    src: url(../fonts/Asap-Regular.woff2);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: Asap-italic;
+    src: url(../fonts/asap-v13-latin-italic.woff2);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: Karla-Regular;
+    src: url(../fonts/Karla-Regular.woff2);  /*Не нашел шрифт в woff формате*/
+   } 
+h1{
+   font-size: 30px;
+   line-height: 40px;
+   font-family: Asap-Regular,sans-serif;
+   text-align: center;
+   margin-top: 100px;
+}
+span{
+    font-family: Asap-Bold,sans-serif;
+    color:#2ec06c;
+}
+p{
+    font-family: Karla-Regular,sans-serif;
+    text-align: center;
+    color: #666666;
+    line-height: 30px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.div-img{
+    text-align: center;
+}
+section,div{
+    background-color: #ffffff !important;
+    text-align: center !important;
+}
+img {
+    padding: 15px;
+    text-align: center;
+} 
+.div-3:hover{
+    background-color: #ff0084 !important;
+}
+img:not(.telegram):hover{
+    background-color: #ff0084 !important;
+}
+.twitter{
+    height: 100% !important;
+}
+button{
+    background-color: #2ec06c !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin:0 !important;
+}
+.telegram{
+    background-color: #2ec06c !important; 
+}
+form div {
+    padding: 0 15px 0px 0 !important;
+}
+.button{
+    padding: 0 !important;
+    margin:0 !important;
+}
+/* .section-1>div>div>div{
+    height: 140px !important;
+} */
+div{
+    vertical-align: middle !important;
+}
+textarea{
+    height: 138px !important;
+}
+/* .dribbble{
+    display: none;
+}
+.dribbble-black:hover,.dribbble:hover{
+    display: inline-block !important;
+} */
+.dribbble{
+    background-image: url(../images/dribbble-black.png) !important;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+}
+.dribbble:hover{
+    background-image: url(../images/dribbble.png) !important;
+}
+input{
+    color:#666666;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: Asap-Regular;
+}
+input::placeholder{
+    font-family: Asap-Italic;
+    color:#666666;
+}
+

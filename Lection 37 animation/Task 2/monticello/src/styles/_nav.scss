@@ -1,0 +1,96 @@
+.nav {
+    position: fixed;
+    height: 101px;
+    z-index: 999;
+    color: $MainFontColor;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #6981f3;
+    // &__background {
+    // }
+    &__container {
+        min-width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__span {
+        border: 1px solid $MainFontColor;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 14px;
+        margin-bottom: 2px;
+    }
+
+    &__item {
+        margin-right: 68px;
+        text-decoration: none;
+        color: $MainFontColor;
+        font-family: $SecondFontFamily;
+        font-size: 14px;
+        &:hover {
+            color: aquamarine;
+        }
+        &:active {
+            color: darken($color: #000, $amount: 0.5);
+        }
+        &:hover > .nav__span {
+            font-weight: bold;
+            border: 2px solid $MainFontColor;
+        }
+        // &:first-child > .nav__span {
+        //     background-color: #ffffff;
+        // }
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    &__soc {
+        width: $Radius;
+        height: $Radius;
+    }
+}
+
+.social-link {
+    text-decoration: none;
+    color: $MainFontColor;
+}
+.link-container {
+    @include circle($diametr: $Radius);
+    // width: $Radius;
+    // height: $Radius;
+    // border-radius: 50%;
+    // border: 1px solid $MainFontColor;
+    // display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-right: 21px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &:hover .social-link {
+        color: violet;
+    }
+    &:active {
+        border-color: darken($color: violet, $amount: 20);
+    }
+    &:active .social-link {
+        color: darken($color: violet, $amount: 20);
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.selected {
+    background-color: $MainFontColor;
+}

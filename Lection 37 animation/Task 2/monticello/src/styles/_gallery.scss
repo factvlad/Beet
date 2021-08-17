@@ -1,0 +1,45 @@
+.gallery {
+    height: 720px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 140px 0;
+    &__title {
+        font-family: $ThirdFontFamily;
+        font-size: 44px;
+        color: $SecongFontColor;
+        margin-top: 40px;
+        margin-bottom: 98px;
+        position: relative;
+        &::before {
+            @include border($SecongFontColor);
+            left: 27%;
+        }
+    }
+    &__container {
+        width: 1170px;
+        display: flex;
+        margin-bottom: 60px;
+    }
+    &__bigimgwrap {
+        margin-right: 11px;
+    }
+    &__row1 {
+        margin-right: 11px;
+    }
+    &__row1 &__imgsmall:first-child,
+    &__row2 &__imgsmall:first-child {
+        margin-bottom: 6px;
+    }
+    &__bigimgwrap {
+        position: relative;
+    }
+    &__circle {
+        //@include circle(79px);
+        position: absolute;
+        top: 40%;
+        left: 46%;
+        color: $MainFontColor;
+    }
+}

@@ -1,0 +1,97 @@
+// * {
+//     margin: 0 !important;
+//     padding: 0 !important;
+// }
+// .wrapper {
+//     height: 100vh;
+//     //width: 100vw;
+//     max-width: 1700px;
+//     margin: 0 auto;
+// }
+.grid-container {
+    display: grid;
+    max-width: 1500px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: repeat(3, 25%);
+    //grid-template-rows: 1fr 1fr;
+    gap: 53px 57px;
+    grid-template-areas:
+        "big big small1"
+        "big big small2"
+        "small3 small4 small5";
+    grid-template-rows: repeat(2, 1fr);
+    //margin-left: 100px;
+    margin-bottom: 82px;
+}
+
+.big {
+    grid-area: big;
+}
+
+.small1 {
+    grid-area: small1;
+}
+
+.small2 {
+    grid-area: small2;
+}
+
+.small3 {
+    grid-area: small3;
+}
+
+.small4 {
+    grid-area: small4;
+}
+
+.small5 {
+    grid-area: small5;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0 0;
+    width: 100%;
+}
+.grid-2 span {
+    position: relative;
+    font-size: 0;
+    &:hover {
+        //filter: grayscale(100%) blur(5px);
+        &:before {
+            opacity: 1;
+            pointer-events: none;
+        }
+    }
+    &:not(:before):hover {
+        //opacity: 1;
+        filter: grayscale(100%) blur(5px);
+    }
+    //z-index: -1;
+}
+.grid-2 span:before {
+    content: "\002b";
+    color: #fff;
+    position: absolute;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    z-index: 999;
+}
+.image:hover {
+    filter: grayscale(100%) blur(5px);
+}

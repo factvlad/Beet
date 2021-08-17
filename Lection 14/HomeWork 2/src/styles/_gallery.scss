@@ -1,0 +1,97 @@
+.block-4{
+
+    background-color: $BGColor;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.info{
+    margin-bottom: 0;
+    color: $BaseFontColor;
+    &__h2{
+        font-size: 90px;
+        font-family: $NameFontFamily;
+        margin-bottom: 25px;
+    }
+    &__describe{
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: $BaseFontSize;
+        line-height: $LineHeight;
+        font-family: $BaseFontFamily;
+    }
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 50px;
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        &--1{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__item{
+        font-size: 0;
+        box-sizing: content-box;
+        background-repeat: no-repeat;
+        &1{
+            background-image: url(images/Gallery/peach.jpg);
+            height:$PhotosHeight*0.56;
+            width: $PhotosWidth*0.66;
+            margin-right:  $BaseMarginPhotoWidth  ;
+            margin-bottom: $BaseMarginPhotoWidth ;
+            vertical-align: top;
+            padding: 0;
+        }
+        &2{
+            background-image: url(images/Gallery/blueberry.jpg);
+            height:($FirstRowPhotosHeight - $BaseMarginPhotoWidth)/2;
+            width:$PhotosWidth - $BaseMarginPhotoWidth - $FirstRowPhotosWidth;
+            margin-bottom: $BaseMarginPhotoWidth ;
+        }
+        &3{
+            background-image: url(images/Gallery/mulberry.jpg);
+            height:($FirstRowPhotosHeight - $BaseMarginPhotoWidth)/2;
+            width:$PhotosWidth - $BaseMarginPhotoWidth - $FirstRowPhotosWidth;
+        }
+        &4{
+            background-image: url(images/Gallery/circle.jpg);
+            height:$SecondRowPhotosHeight;
+            width:$SecondRowPhotosWidth - $BaseMarginPhotoWidth;
+            margin-bottom: 0 ;
+            margin-right: $BaseMarginPhotoWidth ;
+        }
+        &5{
+            background-image: url(images/Gallery/persimmon.jpg);
+            height:$SecondRowPhotosHeight;
+            width:$SecondRowPhotosWidth;
+            margin-bottom: 0 ;
+        }
+    }
+    
+}
+
+.button{
+    width:200px;
+    height: 55px;
+    margin-top: 0;
+    background-color: #5483a0;
+    padding: 0;
+    font-family: $BaseFontFamily;
+    font-size: $BaseFontSize;
+    margin-bottom: 120px;
+    &:active{
+        background-color: darken($color: #5483a0, $amount: 20);
+    }
+}

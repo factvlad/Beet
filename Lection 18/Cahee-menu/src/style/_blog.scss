@@ -1,0 +1,146 @@
+.container6 {
+    background-color: #b07cf7;
+    display: flex;
+    justify-content: center;
+    @include _1141IE {
+        padding-left: $PaddingLeft;
+    }
+    // max-height: 866px;
+    // padding-left: $PaddingLeft;
+    @include _768 {
+        padding-left: 0;
+    }
+    @include _1140IE {
+        padding-left: 0;
+    }
+}
+.blog {
+    @include ContentFlex($ContentWidth, flex, column, center, center);
+    &-header {
+        margin-top: 10%;
+        text-align: center;
+        &__title {
+            color: #ffffff;
+            font-size: 7vw;
+            font-family: Raleway-Bold, sans-serif;
+            margin-bottom: 0;
+            @include _768 {
+                font-size: 10vh;
+            }
+        }
+
+        &__descr {
+            font-size: 1vw;
+            line-height: 1.4em;
+            color: #ffffff;
+            font-family: Raleway-Light, sans-serif;
+            margin-bottom: 3vh;
+            @include _768 {
+                font-size: 1.2vh;
+            }
+        }
+    }
+    &-content {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30%;
+        color: #ffffff;
+        @include ContentFlex(initial, flex, column, space-between, flex-start);
+        &__title {
+            font-family: Raleway-Bold, sans-serif;
+            font-size: 1.2vw;
+            margin-left: 8%;
+            margin-top: 20%;
+            margin-bottom: 5%;
+            @include _1140IE {
+                font-size: 0.5vw;
+            }
+        }
+        &__descr {
+            font-family: Raleway-Light, sans-serif;
+            font-size: 0.7vw;
+            margin-top: 2%;
+        }
+        @include _768 {
+            width: 100%;
+            margin-bottom: 3%;
+            padding-left: 0;
+
+            height: 32%;
+        }
+    }
+    &__date {
+        background-color: #505660;
+        width: 20%;
+        text-align: center;
+        margin: 10% 0 0 10%;
+        @include ContentFlex(initial, flex, column, space-around, center);
+    }
+    &-number {
+        font-family: Raleway-Bold, sans-serif;
+        font-size: 1.5vw;
+    }
+
+    &-month {
+        font-family: Raleway-heavy, sans-serif;
+        font-size: 1vw;
+        padding: 0px 0;
+    }
+    &-images {
+        @include ContentFlex(initial, flex, row, space-around, center);
+        flex-wrap: wrap;
+        padding-left: 0;
+        width: 100%;
+        @include _1141IE {
+            margin: 0 auto;
+            padding-left: 0;
+        }
+        &__img {
+            &1 {
+                background-image: url(images/img-1.png);
+            }
+            &2 {
+                background-image: url(images/img-2.png);
+            }
+            &3 {
+                background-image: url(images/img-3.png);
+                @include _768 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        @include _768 {
+            @include ContentFlex(initial, flex, column, space-between, center);
+            padding-left: 0;
+            width: 60%;
+            margin-bottom: 10%;
+        }
+    }
+    &__button {
+        font-size: 1.5vw;
+        font-family: Raleway-Light, sans-serif;
+        padding: 1.5% 3%;
+        background-color: #f72b3b;
+        text-align: center;
+        margin: 5% 0;
+        color: #ffffff;
+        &:hover {
+            transform: translate(110%, 0);
+        }
+        @include _768 {
+            visibility: hidden;
+            margin-bottom: 100%;
+        }
+    }
+}
+// .blog {
+//     &-images {
+//         @include _768 {
+//             @include ContentFlex(initial, flex, column, space-around, flex-start);
+//             &1 {
+//                 width: max-content;
+//             }
+//         }
+//     }
+// }

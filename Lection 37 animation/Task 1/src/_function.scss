@@ -1,0 +1,4 @@
+@function widthPercent($value) {
+    $result: 100% / $value;
+    @return $result;
+}

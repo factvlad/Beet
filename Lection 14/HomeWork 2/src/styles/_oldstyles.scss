@@ -1,0 +1,201 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    max-height: 1500px;
+    margin: 0 auto;
+} 
+main{
+    height: 100%;
+}
+/* .container{
+    background-image: url(images/strawberry.jpg);    
+    height:66.66%;    
+    margin: 0 auto;
+
+}
+.block-1{
+    max-width: 1200px;    
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 59px;
+} */
+
+.block{
+    background-image: url(images/strawberry.jpg);    
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height:1000px;
+    margin-bottom: 0;       
+    margin: 0 auto;    
+}
+.container{
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    max-width: 1500px;  
+}
+.block-1{
+    max-width: 1200px;    
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px; 
+    /* position: fixed;    */
+}
+.header__h1{
+    padding: 0;
+    margin: 0;  
+    color: #262626;
+    font-family: pacifico-regular,sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: -18px;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    margin-top: 18px;
+
+}
+.nav__item{
+    margin: 0 24px;  
+    font-family: Raleway-Bold,sans-serif;
+    font-size: 16px;
+}
+.nav__item,.link{
+    text-decoration: none;
+    color: #262626;
+}
+.nav__item .link:hover{
+    border-top: 3px solid #ff6033;
+    padding-top: 9px;
+}
+.nav__item:first-child,.link{
+    margin-left: 0;
+}
+.nav__item:last-child,.link{
+    margin-right: 0;
+}
+.info{
+    justify-content: center;
+    margin-bottom: 222px;
+    color: #262626;
+}
+.info__h2{
+    font-family: raleway-heavy,sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.info__p{
+    font-family: raleway-Light,sans-serif;
+    font-size: 17px;
+    line-height: 1.59em;
+}
+.button{
+    background-color: #ff6033;
+    color:#ffffff; 
+    padding: 20px 26px; 
+}
+span{
+    font-family: raleway-Light,sans-serif;
+    font-size: 20px;
+
+}
+.footer{
+    text-align: center;
+    margin-bottom: 72px;
+}
+.block-2{
+    background-color: #00b9b9;
+    margin: 0 auto;
+    max-width: 1500px;    
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    height:700px;
+}
+.raspberry{
+    margin:0;
+    align-items: center;
+}
+.about{
+    color: #ffffff;
+    margin-left: -130px;
+}
+.about__h2{
+    font-family: Raleway-Bold,sans-serif;
+    font-size: 90px;
+    margin-top: 170px;
+    margin-bottom: 0;
+}
+.about__p{
+    font-family: raleway-Light,sans-serif;
+    font-size: 17px;
+    line-height: 1.59em;
+}
+
+.block-3{
+    background-color: #70bfff;
+    min-height: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-3__info{
+    width: 50%;
+    margin: 0 auto;
+}
+.block-3__name{
+    background-image: url(images/tomato.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+.list{
+    list-style: none;
+    margin-left: 150px; 
+}
+.list__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    background-color: #ffffff;
+    margin-bottom: 21px;
+}
+.list__li{
+    background-color: #ffffff;
+    font-family: Raleway-Bold;
+    font-size: 20px;
+    color: #262626;
+    width: 300px;
+    text-align: center;
+    padding: 28px 0px 28px 0 ;
+    border-right: 1px solid #9d9d9d;
+}
+.icon{
+    width: 100px;
+    height: 48px;
+    text-align: right;
+    vertical-align: middle;
+    text-align: center;
+}
+.title{
+    color: #ffffff;
+    font-family: Raleway-Bold;
+    font-size: 90px;
+}

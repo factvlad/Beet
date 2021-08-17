@@ -1,0 +1,59 @@
+// block-fieldset-1
+
+.container-fieldset {
+    width: $FieldsetWidth;
+    margin: 0 auto;
+    padding: 5% 0;
+    @include _768 {
+        width: $FieldsetWidth + 20%;
+    }
+}
+.about {
+    @include fieldset;
+}
+
+// block-fieldset-2
+
+.block-services {
+    background-image: url(images/services.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+}
+.services {
+    @include fieldset(#fff);
+}
+
+// block-fieldset-3
+.what-we-do {
+    @include fieldset(#000);
+    &__svg-container {
+        @include svg-container(13%, 11%);
+    }
+    &__svg {
+        @include svg();
+    }
+    &__name {
+        font-family: lato-bold, sans-serif;
+        font-size: 3vw;
+        letter-spacing: 0.16em;
+        color: #3c3c3c;
+        margin-bottom: 33px;
+    }
+}
+
+// block-fieldset-CONTACT
+.contact {
+    @include fieldset(#000);
+    &__btn {
+        margin-top: 0;
+        margin-bottom: 5%;
+        color: #ffffff;
+        background-color: #3c3c3c;
+        text-align: center;
+        padding: 3% 20%;
+        cursor: pointer;
+        letter-spacing: 0.16em;
+    }
+}

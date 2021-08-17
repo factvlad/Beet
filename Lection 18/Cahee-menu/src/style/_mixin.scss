@@ -1,0 +1,45 @@
+@mixin ContentFlex($WidthContent: $ContentWidth, $display, $flex-direction, $justify-content, $align-items: inherit) {
+    max-width: $WidthContent;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin Height($BaseHeight, $Value) {
+    height: (($BaseHeight / 100) * $Value);
+}
+@mixin LineHeight($BaseHeight, $Value) {
+    line-height: (($BaseHeight / 100) * $Value);
+}
+@mixin _1140 {
+    @media screen and (max-width: 1140px) {
+        @content;
+    }
+}
+@mixin _1140IE {
+    @media screen and (max-width: 1140px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}
+@mixin _1141IE {
+    @media screen and (min-width: 1141px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}
+@mixin _768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _769IE {
+    @media screen and (min-width: 769px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}
+
+@mixin _768IE {
+    @media screen and (max-width: 768px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}

@@ -1,0 +1,8 @@
+$FieldsetWidth: 46.875%;
+
+$MenuItem1WidthLarge: 26.84%;
+$MenuItem2WidthLarge: 41.67%;
+$Iterator: 26.84% / 2;
+
+$MenuItem1WidthMiddle: $MenuItem1WidthLarge + $Iterator;
+$MenuItem2WidthMiddle: $MenuItem2WidthLarge + $Iterator;

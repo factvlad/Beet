@@ -1,0 +1,339 @@
+@font-face {
+  font-family: lato-bold;
+  src: url(fonts/lato-bold.woff2);
+}
+@font-face {
+  font-family: Lato-Regular;
+  src: url(fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: lato-light;
+  src: url(fonts/lato-light.woff);
+}
+.main {
+  margin: 0 auto;
+  max-width: 1900px;
+}
+
+.header {
+  margin: 0 auto;
+  background-image: url(images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: lato-bold, sans-serif;
+  font-size: 0;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 3%;
+}
+.header__container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 17%;
+  margin-top: 11%;
+  margin-top: 11%;
+}
+.header__logo {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.header__logo-1, .header__logo-2 {
+  fill: none;
+  stroke-width: 2px;
+}
+.header__logo-1 {
+  stroke: #fff;
+}
+.header__logo-1, .header__logo-2, .header__logo-3 {
+  fill-rule: evenodd;
+}
+.header__logo-2 {
+  stroke: #f6f7fc;
+}
+.header__logo-3, .header__logo-4 {
+  fill: #fff;
+}
+.header__title {
+  font-size: 3.7vw;
+  letter-spacing: 0.16em;
+  margin-top: 0;
+}
+.header__descr {
+  font-size: 2vw;
+  line-height: 1.9em;
+  margin-top: 0;
+  font-family: Lato-Regular, sans-serif;
+  padding: 0;
+  letter-spacing: 0.06em;
+}
+.header__footer {
+  top: 85%;
+  left: 50%;
+  position: absolute;
+}
+.header__scroll {
+  fill: #fff;
+  fill-rule: evenodd;
+  height: 37px;
+  width: 32px;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .header__scroll {
+    visibility: hidden;
+  }
+}
+
+.container-fieldset {
+  width: 46.875%;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+@media screen and (max-width: 768px) {
+  .container-fieldset {
+    width: 66.875%;
+  }
+}
+
+.about {
+  text-align: center;
+  color: #000;
+}
+.about__legend {
+  font-family: lato-bold, sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.16em;
+  padding: 0 15%;
+}
+.about__text {
+  font-family: lato-light, sans-serif;
+  font-size: 1vw;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .about__text {
+    font-size: 2vw;
+  }
+}
+
+.block-services {
+  background-image: url(images/services.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.services {
+  text-align: center;
+  color: #fff;
+}
+.services__legend {
+  font-family: lato-bold, sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.16em;
+  padding: 0 15%;
+}
+.services__text {
+  font-family: lato-light, sans-serif;
+  font-size: 1vw;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .services__text {
+    font-size: 2vw;
+  }
+}
+
+.what-we-do {
+  text-align: center;
+  color: #000;
+}
+.what-we-do__legend {
+  font-family: lato-bold, sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.16em;
+  padding: 0 15%;
+}
+.what-we-do__text {
+  font-family: lato-light, sans-serif;
+  font-size: 1vw;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .what-we-do__text {
+    font-size: 2vw;
+  }
+}
+.what-we-do__svg-container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 13%;
+  margin-top: 11%;
+}
+.what-we-do__svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.what-we-do__name {
+  font-family: lato-bold, sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.16em;
+  color: #3c3c3c;
+  margin-bottom: 33px;
+}
+
+.contact {
+  text-align: center;
+  color: #000;
+}
+.contact__legend {
+  font-family: lato-bold, sans-serif;
+  font-size: 3vw;
+  letter-spacing: 0.16em;
+  padding: 0 15%;
+}
+.contact__text {
+  font-family: lato-light, sans-serif;
+  font-size: 1vw;
+  line-height: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .contact__text {
+    font-size: 2vw;
+  }
+}
+.contact__btn {
+  margin-top: 0;
+  margin-bottom: 5%;
+  color: #ffffff;
+  background-color: #3c3c3c;
+  text-align: center;
+  padding: 3% 20%;
+  cursor: pointer;
+  letter-spacing: 0.16em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu__item1, .menu__item3, .menu__item4, .menu__item6 {
+  width: 28.64%;
+}
+.menu__item2, .menu__item5 {
+  width: 41.67%;
+}
+.menu__img {
+  width: 100%;
+  height: auto;
+}
+.menu__item1, .menu__item2, .menu__item3, .menu__item4, .menu__item5, .menu__item6 {
+  margin-bottom: 0.7%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .menu__item1, .menu__item2, .menu__item3, .menu__item4, .menu__item5, .menu__item6 {
+    width: 49.4%;
+    margin-bottom: 0.7%;
+    margin-right: 0.3%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .menu__item1, .menu__item2, .menu__item3, .menu__item4, .menu__item5, .menu__item6 {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 0.7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu__item2 {
+    order: 4;
+    height: 120%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu__item5 {
+    order: 3;
+    height: 120%;
+  }
+}
+.menu__sign {
+  position: absolute;
+  top: 65%;
+  left: 7%;
+  font-family: lato-bold, sans-serif;
+  color: #ffffff;
+  font-size: 2.5vw;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .menu__sign {
+    top: 50%;
+    left: 43%;
+  }
+}
+
+.footer-container {
+  text-align: center;
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 7%;
+  margin-top: 11%;
+}
+.footer__logo {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  left: -18%;
+  vertical-align: middle;
+}
+.footer__logo-1, .footer__logo-2 {
+  fill: none;
+  stroke-width: 2px;
+}
+.footer__logo-1 {
+  stroke: #000;
+}
+.footer__logo-1, .footer__logo-2, .footer__logo-3 {
+  fill-rule: evenodd;
+}
+.footer__logo-2 {
+  stroke: #000000;
+}
+.footer__logo-3, .footer__logo-4 {
+  fill: #000;
+}
+.footer__text {
+  font-size: 2vw;
+  vertical-align: middle;
+  position: absolute;
+  left: 36%;
+  top: 12%;
+}
+/*# sourceMappingURL=style.css.map */

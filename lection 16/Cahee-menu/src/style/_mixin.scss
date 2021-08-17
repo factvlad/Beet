@@ -1,0 +1,18 @@
+@mixin ContentFlex($WidthContent: $ContentWidth, $display, $flex-direction, $justify-content, $align-items: inherit) {
+    max-width: $WidthContent;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin Height($BaseHeight, $Value) {
+    height: (($BaseHeight / 100) * $Value);
+}
+@mixin LineHeight($BaseHeight, $Value) {
+    line-height: (($BaseHeight / 100) * $Value);
+}
+@mixin _768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}

@@ -1,0 +1,94 @@
+.grid-container {
+  display: grid;
+  max-width: 1500px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 53px 57px;
+  grid-template-areas: "big big small1" "big big small2" "small3 small4 small5";
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 82px;
+}
+
+.big {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: big;
+}
+
+.small1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: small1;
+}
+
+.small2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: small2;
+}
+
+.small3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: small3;
+}
+
+.small4 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: small4;
+}
+
+.small5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: small5;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0 0;
+  width: 100%;
+}
+
+.grid-2 span {
+  position: relative;
+  font-size: 0;
+}
+.grid-2 span:hover:before {
+  opacity: 1;
+  pointer-events: none;
+}
+.grid-2 span:not(:before):hover {
+  filter: grayscale(100%) blur(5px);
+}
+
+.grid-2 span:before {
+  content: "+";
+  color: #fff;
+  position: absolute;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  z-index: 999;
+}
+
+.image:hover {
+  filter: grayscale(100%) blur(5px);
+}
+/*# sourceMappingURL=style.css.map */

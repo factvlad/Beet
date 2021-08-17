@@ -1,0 +1,93 @@
+@font-face {
+    font-family: TrebuchetMS;
+    src: url(fonts/TrebuchetMS.ttf);  /*Не нашел шрифт в woff формате*/
+   }
+   
+*{transition: all .1s ease-in;}  
+
+header{
+    background-color: #4A4F56;
+}
+h1{
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+    color:#EB7E7F;
+    font-size:24px;
+    text-align: center;
+    font-family: TrebuchetMS;
+}
+h1+p,a{
+    color:#EB7E7F;
+    font-size:18px;
+    text-align: center;
+    margin: 5px 0 15px 0;
+    font-family: Arial;
+    padding: 0 0 10px 0;
+}
+a:hover{
+    color:rgb(24, 24, 219);
+}
+body{
+    background-color: #3b3f45;
+}
+
+.wrapper{
+    display: block;
+    max-width: 50%;
+    margin:0 auto; 
+    background-color: #3B3F45;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #88839E;
+    padding: 0px;
+}
+li{
+    color:#ffffff;
+    font-family:Arial;
+    display:block;
+}
+input{
+    padding: 5px;
+}
+li:nth-child(even){
+    background-color: #7A7593;
+}
+li:hover{
+    background-color: #625E77;
+    border-bottom: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+}
+li:active{
+    background-color:#766774;
+}
+label{
+     width:90% ;
+     display:inline-block;
+     padding:20px 0px 20px 0px;
+ } 
+span{
+    font-size: 12px;
+    color: #BFC5CD;
+
+ }
+span::before{
+     content:"( "
+ }
+span::after{
+    content:" )"
+} 
+input[type=checkbox]:checked + label,
+input[type=checkbox]:checked + label> span
+    {
+    color: #A19FB5;
+    text-decoration-line: line-through;
+  }
+footer{
+     background-color: #4A4F56;
+     color:#DE7C7E;
+     font-family:sans-serif;
+     text-align: center;
+     padding: 1em;
+ } 

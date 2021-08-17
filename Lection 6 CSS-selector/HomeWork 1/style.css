@@ -1,0 +1,41 @@
+.wrapper{
+    max-width:1110 px;
+    display:flex;
+}
+section{
+    flex:1;
+    text-align: center;
+    margin:55px 0 0 0;
+}
+.round-2 {
+    width: 65px;
+    height: 65px;
+    border: 2px solid #3b73ab;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #3b73ab;
+    opacity: 0.7;
+    pointer-events: none;
+  }  
+h2,p{
+   font-size: 14px;
+   font-family: Myriad Pro Regular; 
+}
+.inner {
+    margin:15.5px;
+    flex:1;
+    color: #ffffff; 
+    pointer-events: auto;
+}
+.inner:hover{
+    color: #2a69a6;
+}
+.round-2:hover{
+    background-color: #ffffff;
+    border-color:  #2a69a6;
+} 
+
+
+
+
+

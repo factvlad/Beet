@@ -1,0 +1,219 @@
+body {
+    background-color: #9789f9;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 100px auto;
+    align-items: flex-start;
+}
+.tarif {
+    width: calc((100% - 37%) / 2);
+    margin: 20px;
+    background-color: aqua;
+    text-align: center;
+    background-color: #f5f4f9;
+    // overflow: hidden;
+    padding-bottom: 5%;
+    position: relative;
+    // position: relative;
+    &__pop {
+        width: 37%;
+        margin: 0 auto;
+        padding-bottom: 0%;
+    }
+    &__box {
+        background-color: #fff;
+        // min-height: $TarifBoxMinHeight;
+
+        // border-radius: 157px 157px 0 0;
+
+        border-radius: 500em 500em 0 0;
+        // border-radius: 50% 50% 0 0;
+        // margin: 0% -10%;
+        // clip-path: circle(50% at 50% 50%);
+        // clip-path: ellipse(80% 68% at 50% 68%);
+        text-align: center;
+        padding: 10% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; // margin: 0 -11%;
+        &__pop {
+            position: relative;
+        }
+    }
+    &__price {
+        font-size: _ie(5);
+        padding-top: 40px;
+        font-family: BebasNeue-Thin, sans-serif;
+    }
+    &__price:before {
+        content: "$";
+        font-family: BebasNeue-Thin, sans-serif;
+        font-size: _ie(2.5);
+        vertical-align: super;
+        padding-top: 0;
+    }
+    &__price:after {
+        content: "/hr";
+        font-size: _ie(1);
+        // vertical-align: sub;
+        font-family: BebasNeue-Light;
+    }
+    &__name {
+        font-family: BebasNeue-Regular;
+        font-size: 2vmax;
+        padding-bottom: 5%;
+    }
+    &__icon {
+        text-align: center;
+        width: $SvgSize;
+        height: $SvgSize;
+        transform: scale(1.5);
+        margin: 3% 0% 7% 0;
+        // &__center {
+        //     margin-bottom: 19.4%;
+        // }
+    }
+    &__benefits {
+        font-size: _ie(1.2);
+        font-family: Roboto-Light;
+        color: #181818;
+        padding-left: 0;
+    }
+    &__benefit {
+        list-style: none;
+        text-align: left;
+        margin-bottom: 20%;
+    }
+    &__benefit:last-child {
+        margin-bottom: 0;
+    }
+    &__footer {
+        // text-align: center;
+        // display: flex;
+        // justify-content: center;
+
+        position: absolute;
+        height: 5%;
+        left: 20%;
+        bottom: -2.8%;
+        background-color: #6fcffb;
+        color: #ffffff;
+        font-size: 1vw;
+        font-family: BebasNeue-Bold;
+        width: 60%;
+        border-radius: 28px;
+        cursor: pointer;
+        // top: 175%;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__pop {
+            background-color: #fd8d7b;
+            margin-bottom: 0%;
+            left: 25%;
+            bottom: -4%;
+            position: absolute;
+            width: 50%;
+            padding: 0%;
+            height: 8%;
+        }
+    }
+    &__true-footer {
+        padding-top: 15%;
+        padding-bottom: 2%;
+        font-family: Roboto-Light;
+        color: #a9a9a9;
+        font-size: 1vmin;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fd8d7b;
+
+    &-large {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: $BaseCircleDiametr * 11.5;
+        height: $BaseCircleDiametr * 11.5;
+        left: 82%;
+        top: 4%;
+        font-family: BebasNeue-Regular;
+        color: #fff;
+        font-size: 3vmin;
+        @include _992 {
+            width: ($BaseCircleDiametr - 1px) * 11.5;
+            height: ($BaseCircleDiametr - 1px) * 11.5;
+        }
+        @include _768 {
+            width: ($BaseCircleDiametr - 2px) * 11.5;
+            height: ($BaseCircleDiametr - 2px) * 11.5;
+        }
+        @include _400 {
+            width: ($BaseCircleDiametr - 2.7px) * 11.5;
+            height: ($BaseCircleDiametr - 2.7px) * 11.5;
+        }
+    }
+    &-middle {
+        width: $BaseCircleDiametr * 3;
+        height: $BaseCircleDiametr * 3;
+        left: 92%;
+        top: 3%;
+        @include _992 {
+            width: ($BaseCircleDiametr - 0.7px) * 3;
+            height: ($BaseCircleDiametr - 0.7px) * 3;
+        }
+        @include _768 {
+            width: ($BaseCircleDiametr - 1.5px) * 3;
+            height: ($BaseCircleDiametr - 1.5px) * 3;
+        }
+        @include _400 {
+            width: ($BaseCircleDiametr - 2.3px) * 3;
+            height: ($BaseCircleDiametr - 2.3px) * 3;
+        }
+    }
+    &-small {
+        width: $BaseCircleDiametr;
+        height: $BaseCircleDiametr;
+        left: 96%;
+        top: 2%;
+    }
+}
+.sign {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: _ie(1);
+    font-family: BebasNeue-Regular, sans-serif;
+    letter-spacing: 0.08em;
+    background-color: #3b4040;
+    color: #fff;
+    padding: 2% 3%;
+    border-radius: 14px;
+    top: 5%;
+    left: 93.5%;
+    z-index: 1;
+    @include _992 {
+        transform: scale(0.7);
+        top: 0%;
+        left: 53%;
+    }
+    @include _768 {
+        transform: scale(0.5);
+        top: -15%;
+        left: -15%;
+    }
+    @include _400 {
+        transform: scale(0.3);
+        top: -50%;
+        left: -141%;
+    }
+    // clip-path: polygon(56% 19%, 81% 21%, 92% 36%, 92% 65%, 83% 85%, 53% 92%, 21% 83%, 0 56%, 17% 33%, 36% 23%);
+}

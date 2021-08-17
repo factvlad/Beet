@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="tasks">
+            <!-- <button class="clear" onclick="clearConsole()">Очистить консоль -->
+            <!--(Не стандартная фича, может работать не у
+                всех, если не работает, не снимай баллы плизззззз))))-->
+            <!-- </button><br> -->
+
+            <form action="">
+                <fieldset class="task">
+                    <legend>Task 1</legend>
+                    <fieldset>
+                        <p>Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит
+                            название продукта, необходимое количество и куплен или нет. Написать несколько функций для
+                            работы с таким массивом.
+
+                        </p>
+                        <legend>1</legend>
+
+                        <button onclick="arrayToString(shoppingList,'showShoppingList')" type="button"> Show the array
+                            Shopping List
+                        </button><br>
+                        <textarea id="showShoppingList" cols="60" rows="6"></textarea>
+
+                        <p>
+                            Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом –
+                            купленные.
+                        </p>
+
+                        <button onclick="sortedShoppingList()" type="button"> Show
+                            the
+                            sort array Shopping List
+                        </button><br>
+                        <textarea id="sortShoppingList" cols="60" rows="6"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2</legend>
+                        <p>
+                            Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке
+                            продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
+                        </p>
+
+                        <label for="addProduct"> Enter product you want to add to the shoppling list</label><br>
+                        <input type="text" placeholder="Add name of some new good" id="addProduct"><br>
+                        <label for="addProductQuantity"> Enter Quantity product you want to add to the shoppling
+                            list</label><br>
+                        <input type="text" value="12" placeholder="Add Quantity" id="addProductQuantity"><br>
+                        <button onclick="arrayToString(ProductAdd(shoppingList),'ShoppingListWithNewProd')"
+                            type="button">
+                            Show Shopping List
+                        </button><br>
+                        <textarea id="ShoppingListWithNewProd" cols="60" rows="6"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3</legend>
+                        <p>
+                            Покупка продукта. Функция принимает название продукта и отмечает его как купленный.
+                        </p>
+                        <label for="boughtProduct"> Enter product that was bought</label><br>
+                        <input type="text" placeholder="Bought product" id="boughtProduct"><br>
+                        <button onclick="arrayToString(changeIsBoughtValue(shoppingList),'ShoppingListBoughtProd')"
+                            type="button">
+                            Show Shopping List
+                        </button><br>
+                        <textarea id="ShoppingListBoughtProd" cols="60" rows="6"></textarea>
+                    </fieldset>
+                </fieldset>
+                <fieldset class="task">
+                    <legend>Task 2</legend>
+                    <fieldset>
+                        <legend>1</legend>
+                        <p>Распечатка чека на экран;</p>
+                        <button onclick="arrayToString(check,'printCheck')" type="button">Print
+                            check</button>
+                        <textarea id="printCheck" cols="30" rows="6"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2</legend>
+                        <p>Подсчет общей суммы покупки;</p>
+                        <button type="button" onclick="calcCheckSum(check)">Prinf sum of check</button>
+                        <input id="printSum">
+                    </fieldset>
+                    <fieldset>
+                        <legend>3</legend>
+                        <p>Получение самой дорогой покупки в чеке;</p>
+                        <button type="button" onclick="getMaxProduct()">Print the most expensive position in
+                            check</button>
+                        <input id="printMax">
+                    </fieldset>
+                    <fieldset>
+                        <legend>4</legend>
+                        <p>Подсчет средней стоимости одного товара в чеке.</p>
+                        <button type="button" onclick="calcAveragePrice()">Print average price</button> <br>
+                        <input id="printAvg">
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Task 3</legend>
+                    <p>3. Создать массив CSS-стилей (цвет, размер шрифта, выравнивание, подчеркивание и т. д.). Каждый
+                        элемент массива – это объект, состоящий из двух свойств: название стиля и значение стиля.
+                        Написать функцию, которая принимает массив стилей и текст, и выводит этот текст с помощью
+                        document.write() в тегах, добавив в открывающий тег атрибут style со всеми стилями,
+                        перечисленными в массиве.
+                    </p>
+                    <label for="textToFormat">Enter text to format</label><br>
+                    <textarea cols="60" rows="6" type="text" id="textToFormat"
+                        placeholder="textToFormat">Text to format </textarea><br>
+                    <button type="button" onclick="task3()">Format text with style js</button>
+                    <p id="formatResult"></p>
+                </fieldset>
+
+                <fieldset class="task task4">
+                    <legend>Task 4</legend>
+                    <fieldset>
+                        <legend>1</legend>
+                        <p>4. Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества
+                            посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена.
+                            Написать несколько функций для работы с ним^</p>
+                        <p>1. Вывод на экран всех аудиторий;</p>
+                        <button onclick="getAllAuditoriums()" type="button">Show all
+                            auditoriums</button><br>
+                        <textarea id="allAuditoriums" cols="60" rows="10"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>2</legend>
+                        <p> Enter the faculty you want to see info about</p>
+                        <select id="select"></select><br>
+                        <button type="button" onclick="getInfoByAud()"> Show the info</button><br>
+                        <textarea id="infoAud" cols="40" rows="6"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>3</legend>
+                        <p>Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа
+                            состоит из названия, количества студентов и названия факультета;</p>
+                        <label for="group1">Enter the name of group</label><br>
+                        <input type="text" value="KIKS" id="group1"><br>
+                        <label for="group2">Enter the number of students in group</label><br>
+                        <input type="text" value="10" id="group2"><br>
+                        <label for="group3">Choose the name of faculty</label><br>
+                        <select id="group3"></select><br>
+                        <button type="button" onclick="checkAud()"> Show the info</button><br>
+                        <textarea id="checkAuds" cols="40" rows="10"
+                            placeholder="List of available auditorius"></textarea>
+                    </fieldset>
+                    <fieldset class="sortField">
+                        <legend>4</legend>
+                        <p>Функция сортировки аудиторий по количеству мест;</p>
+                        <button onclick="sortArrayTask4Size()" type="button">Click
+                            to sort by Quantity </button><br>
+                        <textarea id="sortQuantity" cols="60" rows="10"></textarea>
+                    </fieldset>
+                    <fieldset class="sortField">
+                        <legend>5</legend>
+                        <p>Функция сортировки аудиторий по названию (по алфавиту).</p>
+                        <button onclick="sortArrayTask4Faculty()" type="button">Click to sort by faculty</button><br>
+                        <textarea id="sortFaculty" cols="60" rows="10"></textarea>
+                    </fieldset>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

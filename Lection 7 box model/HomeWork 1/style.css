@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/Montserrat-Bold.woff);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.woff);  /*Не нашел шрифт в woff формате*/
+   }
+@font-face {
+    font-family: PTSans-Regular;
+    src: url(fonts/PTSans-Regular.woff);  /*Не нашел шрифт в woff формате*/
+   }  
+*{
+    box-sizing: content-box;
+}
+
+header{
+    text-align: center;
+}
+body{
+    background-color: #ffffff;
+    max-width: 900px;
+    text-align: center;
+    margin:0 auto;
+}
+.header_p{
+    font-size: 12px;
+    color:#958089;
+    margin:0;
+    padding:0;
+    margin-top: 140px;
+    font-family: Montserrat-Bold;
+    line-height: 30px;
+    letter-spacing: 0.4em;   
+}
+h1{
+    color: #0ec8cb;                 
+    font-size: 48px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: Montserrat-Regular;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+ h2{
+    text-align: center;
+    margin:0;
+    font-size: 18px;
+    margin-top: 40px;
+    font-family: PTSans-Regular;
+    line-height: 30px;
+    color: #999999;
+} 
+h3{
+    font-family: Montserrat-Regular;
+    font-size: 21px;
+}
+.diamond{
+    background-color:black;/*Поменял цвет на черный потому что на белом фоне эту картинку не видно вообще*/
+}
+  img{
+    height: 65px;
+}  
+
+section{
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 23%;
+    padding-top: 55px;
+    padding-bottom: 80px;
+    vertical-align: top;
+}  
+.div{
+    background: rgba(236, 236, 236, 0.1);
+    border:1px solid #ececec;
+    margin:60px 0 138px 0; 
+    
+    display:inline-block;
+    overflow:auto;
+    font-size: 0; 
+}
+section:hover {
+    color:#ffffff;
+    background-color: #0ec8cb;
+}
+section:hover>.diamond{
+    background-color:#0ec8cb;
+}
+p{
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 30px;
+    font-family: PTSans-Regular;
+    line-height: 22px;
+}

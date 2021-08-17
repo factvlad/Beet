@@ -1,0 +1,106 @@
+@font-face {
+    font-family: lato-bold;
+    src: url(fonts/lato-bold.woff2); 
+   }
+@font-face {
+    font-family: lato-light;
+    src: url(fonts/lato-light.woff);  
+   }
+body{
+    max-width: 1170px;   
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+}
+main{
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 116px;
+}
+h1{
+    font-family: lato-bold,sans-serif;
+    letter-spacing: 0.16em;
+    font-size: 34px;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 20px;;
+}
+hr{
+    width:46px;
+    height: 5px;
+    background: #dddbdb;
+    margin-bottom: 35px;
+    border: 0;
+}
+.text{
+    font-size: 16px;
+    font-family: Myriad Pro,sans-serif;
+    line-height: 1.5;
+    margin: 0; 
+    margin-bottom: 38px;
+    color: #3c3c3c;
+}
+.part{
+    height: 270px;
+    width:25%;
+    position: relative;   
+    margin: 0 15px;
+    perspective:1000px;  
+    perspective-origin: 50% 50%;   
+}
+.soc{
+    height: 270px; 
+    background: #18b5dc; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.photo{
+    height: 100%;
+    top:0;
+    background-size: cover;  
+    position: absolute;
+    width:100%;
+    background-position: center;
+}
+.photo1{
+    background-image: url(images/Rectangle\ 4.png);  
+}
+.photo2{
+    background-image: url(images/Rectangle\ 2.png);
+}
+.photo3{
+    background-image: url(images/Rectangle\ 3.png);
+}
+.photo4{ 
+    background-image: url(images/Rectangle\ 4.png);  
+}
+.link{
+    width:42px;
+    height: 42px;
+    background-color: #5ecbe7;
+    text-align: center;
+    margin:5px;
+}
+i{
+    padding-top: 13px;
+    color: #ffffff;
+    z-index: 0;
+}
+ .photo:hover{
+    transition: transform 2s;
+    display: none; 
+} 
+.sign{
+    font-size: 18px;
+    font-family: lato-bold,sans-serif;
+    margin-bottom: 0;
+}
+
+.position{
+    font-family: lato-light,sans-serif;
+    font-size: 14px;   
+    color: #646464;
+    margin: 0;
+}

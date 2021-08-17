@@ -1,0 +1,41 @@
+@import 'var';
+
+body{
+    font-family: $Font;
+    font-size: $BaseFontSize;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100px;
+}
+.header{    
+    text-align: $TextAlign;
+    margin-bottom: 40px;
+    &__title{
+        font-size: $TitleColor;
+        text-align: center;
+        line-height: 24px;
+        font-family: Raleway-Medium,sans-serif;
+        color:$TitleColor;
+        letter-spacing: $LetterSpacing;
+    }
+    &__subtitle{
+        font-size: $BaseFontSize + 44px;
+        text-align: center;
+        color: $SecondColor;
+        font-family: roboto-black,sans-serif;
+    }
+    &__separator{
+        @extend .separator;
+        &:before{
+            width: 450px;
+        }
+    }
+}
+.bonfire{
+    width: $IconSize;
+    height: $IconSize;
+    color: $SecondColor;
+    vertical-align: middle;
+}

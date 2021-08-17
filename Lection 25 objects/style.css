@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.tasks {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    margin-right: 100px;
+}
+button {
+    width: 400px;
+    margin-bottom: 10px;
+}
+.clear {
+    background-color: rgb(126, 158, 9);
+}
+#car {
+    min-width: 200px;
+    min-height: 70px;
+}
+input {
+    margin-bottom: 10px;
+}

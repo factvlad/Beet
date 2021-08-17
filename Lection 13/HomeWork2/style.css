@@ -1,0 +1,279 @@
+@font-face {
+    font-family: lato-bold;
+    src: url(fonts/lato-bold.woff2);
+   }
+@font-face {
+    font-family: Lato-Regular;
+    src: url(fonts/Lato-Regular.ttf);
+   }  
+@font-face {
+    font-family: lato-light;
+    src: url(fonts/lato-light.woff);
+   } 
+/* html{
+    height: 100%;
+}        */
+body{
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.header{
+    background-image: url(images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    font-family: lato-bold,sans-serif;  
+    font-size: 0;  
+    margin: 0 auto;
+}
+/*Стили для лого Assassin's Creed*/
+.header__logo{
+    margin: 285px 0 98px 0;
+    transform: scale(2);
+}
+/*Стили для лого з макета (скучно)*/
+/* .header__logo{ 
+    margin: 285px 0 98px 0;
+     width:69px;
+    height:71px; 
+} 
+ .logo-1, .logo-2 {
+    fill: none;
+    stroke-width: 2px;
+  }
+
+  .logo-1 {
+    stroke: #fff;
+  }
+
+  .logo-1, .logo-2, .logo-3 {
+    fill-rule: evenodd;
+  }
+
+  .logo-2 {
+    stroke: #f6f7fc;
+  }
+  .logo-3, .logo-4 {
+    fill: #fff;
+  } */
+
+.header__h1{
+    margin-bottom: 51px;
+    font-size: 54px;
+    letter-spacing: 0.16em;
+    margin-top: 0;
+}
+.header__describe{
+    margin-bottom: 244px;
+    font-size: 15px;
+    line-height: 1.9em;
+    margin-top: 0;
+    font-family: Lato-Regular,sans-serif;
+    padding: 0;
+    letter-spacing: 0.06em;
+}
+
+.header__scroll{
+    fill: #fff;
+    fill-rule: evenodd;
+    margin-bottom: 115px;
+    height: 37px;
+    width: 32px;
+    margin-top: 0;
+    padding: 0;
+}
+/*ABOUT US*/
+.fieldset{
+    margin: 0 auto;
+    text-align: center;
+    margin: 159px 26.46%;
+}
+.about{
+    color: #3c3c3c;
+}
+.legend{
+    font-family: lato-bold,sans-serif;  
+    font-size: 43px;
+    letter-spacing: 0.16em;
+    padding: 0 104px;
+}
+.text{
+    font-family: lato-light,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;    
+}
+.services{
+    color:#ffffff;
+    background-image: url(images/services.jpg);
+    background-size: cover;
+    padding: 110px 0;
+}
+.services__content{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*WHAT WE DO*/
+svg{
+    fill: #3c3c3c;
+    fill-rule: evenodd;
+    margin-top: 100px;
+    margin-bottom: 38px;
+}
+.serv__design{
+    height: 83.0px;
+    width: 79.969px;
+}
+.serv__development{
+    width:79px ;
+    height:76px;
+}
+.serv__tablet{
+    width:78.969px;
+    height:91px;
+}
+.serv__title{
+    margin-top: 0;
+    font-family: lato-bold,sans-serif;  
+    font-size: 20px;
+    letter-spacing: 0.16em;
+    color: #3c3c3c;
+    margin-bottom: 33px;
+}
+.serv__describe{
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.85em;
+}
+
+/*Navigation (Maybe)*/
+
+.navig{
+    margin-top: 114px; 
+}
+.navig__list{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    display: flex;
+    /* list-style: none; */
+}
+.navig__item1{
+    background-image: url(images/Layer-1.jpg);
+    min-height: 237px;
+    width:28.64%;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+.navig__item2{
+    background-image: url(images/Layer-2.jpg);
+    min-height: 237px;
+    width:41.67%;
+    border-right: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+.navig__item3{
+    background-image: url(images/Layer-3.jpg);
+    min-height: 237px;
+    width:28.64%;
+    border-bottom: 10px solid #fff;
+}
+.navig__item4{
+    background-image: url(images/Layer-4.jpg);
+    min-height: 237px;
+    width:28.64%;
+    border-right: 10px solid #fff;
+}
+.navig__item5{
+    background-image: url(images/Layer-5.jpg);
+    min-height: 237px;
+    width:41.67%;
+    border-right: 10px solid #fff;
+}
+.navig__item6{
+    background-image: url(images/Layer-6.jpg);
+    min-height: 237px;
+    width:28.64%;
+}
+a{
+    text-decoration: none;
+}
+a>div{
+    font-family: lato-bold,sans-serif; 
+    color: #ffffff;
+    font-size: 34px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding-left: 38px;
+    padding-top: 169px;
+}
+
+/*Contact*/
+.contact{
+    margin-bottom: -100px;
+}
+.contact__name{
+    font-size: 30px;
+    margin-bottom: 55px;
+}
+.contact__describe{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.button{
+    margin-top: 0;
+    margin-bottom: 48px;
+    color:#ffffff;
+    background-color: #3c3c3c;
+    text-align: center;
+    padding: 23px 140px;
+    cursor: pointer;
+}
+.button__text{
+    letter-spacing: 0.16em;
+}
+.button:active{
+    background-color: #000000;
+}
+/*Footer*/
+
+.footer{
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 65px;
+}
+.footer__logo{
+    width: 35px;
+    height: 37px;
+    margin: 0;
+    vertical-align: middle;
+}
+.footer__logo-1, .footer__logo-2 {
+    fill: none;
+    stroke-width: 2px;      
+  }
+
+  .footer__logo-1 {
+    stroke: #000000;
+  }
+
+  .footer__logo-1, .footer__logo-2, .footer__logo-3 {
+    fill-rule: evenodd;
+  }
+
+  .footer__logo-2 {
+    stroke: #000000;
+  }
+  .footer__logo-3, .footer__logo-4 {
+    fill: #000000;
+  }
+  .footer>span{
+      vertical-align: middle;
+  }

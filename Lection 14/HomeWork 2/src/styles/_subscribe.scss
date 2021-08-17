@@ -1,0 +1,47 @@
+.block-5{
+    background-image: url(images/Subscribe/bg.jpg);
+    min-height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 163px;
+    padding-top: 140px;
+}
+.info{
+    &__h2{
+        &--subscribe{
+            font-family: $NameFontFamily;
+            font-size: 40px;
+            margin-bottom: 30px;
+            margin-top: 0;
+                    }
+        }    
+    &__describe{
+        &--subscribe  {
+            font-family: $BaseFontFamily;
+            font-size: $BaseFontSize;
+            line-height: $LineHeight;
+            margin-top: 0;
+                        }
+                }   
+    }
+.sub{
+    &__btn{
+        background-color: #96b92c;
+        height: 100%;
+        padding: 20px 31px;
+        font-size: $BaseFontSize + 3px;
+        margin-left: 0;
+        &:active{
+            background-color: darken($color: #96b92c, $amount: 20);
+        }
+    }
+
+}
+.mail{
+    width:570px;
+    height: 100%;
+    font-size: $BaseFontSize - 2px;
+    padding: 22px 14px;
+    outline: none;
+    margin-right: 30px;
+}

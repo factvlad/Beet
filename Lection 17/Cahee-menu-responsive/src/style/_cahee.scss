@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+body {
+    max-width: $BodyWidth;
+    margin: 0 auto;
+    height: 100%;
+}
+.container {
+    // @include ContentFlex ($BodyWidth,flex,column,space-between) ;
+    display: flex;
+    flex-direction: column;
+    &-image1 {
+        background-image: url(images/strawberry.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: initial;
+        margin-bottom: 0;
+        height: 819px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between  ;
+        font-size: 0;
+        padding-left: $PaddingLeft;
+        @include ContentFlex($BodyWidth, flex, column, space-between);
+        @include _768 {
+            padding-left: 0;
+            min-height: 700px;
+            background-size: initial;
+            background-image: url(images/strawberry-small.jpg);
+        }
+    }
+    &-content1 {
+        @include ContentFlex($ContentWidth, flex, column, space-between);
+        // max-width: $ContentWidth;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    max-width: $BodyWidth;
+    background-color: #f9f8fb;
+    @include _1140 {
+        flex-direction: column;
+        width: 100%;
+    }
+    &__menu {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        @include _1140 {
+            display: none;
+        }
+    }
+    &__item {
+        margin-right: 1vw;
+        padding: 12px 0;
+        font-size: 2vh;
+        &:hover {
+            border-top: 3px solid #9c1919;
+            border-bottom: 3px solid #9c1919;
+            padding: 9px 0 9px 0;
+        }
+        @include _1140 {
+            text-align: center;
+            display: list-item;
+            width: 100%;
+            border-top: 1px solid #000;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: #000;
+        font-family: Raleway-Bold, sans-serif;
+    }
+    .navicon {
+        background: #333;
+        display: none;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width: 18px;
+    }
+
+    .navicon:before,
+    .navicon:after {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+    }
+    &__logo {
+        font-size: 4vw;
+        font-family: pacifico-regular, sans-serif;
+        margin: 0;
+        padding: 0;
+        padding-left: $PaddingLeft;
+        @include _1140 {
+            padding-left: 0;
+            font-size: 9vw;
+        }
+    }
+}
+.burger {
+    &__toggle,
+    &__btn {
+        display: none;
+    }
+    &__btn {
+        padding: 28px 20px;
+        float: right;
+        @include _1140 {
+            display: inline-block !important;
+            text-align: right;
+            cursor: pointer;
+        }
+        .navicon {
+            display: block;
+
+            &:before,
+            &:after {
+                display: block;
+            }
+            &:before {
+                top: 5px;
+            }
+
+            &:after {
+                top: -5px;
+            }
+        }
+    }
+    @include _1140 {
+        &__toggle:checked ~ .nav__menu {
+            display: block;
+            flex-direction: column;
+            width: 100%;
+            background-color: #f9f8fb;
+            &:last-child {
+                border-bottom: 1px solid #000;
+            }
+        }
+        &__toggle:checked ~ .burger__btn .navicon {
+            background: transparent;
+        }
+
+        &__toggle:checked ~ .burger__btn .navicon:before {
+            transform: rotate(-45deg);
+        }
+
+        &__toggle:checked ~ .burger__btn .navicon:after {
+            transform: rotate(45deg);
+        }
+
+        &__toggle:checked ~ .burger__btn:not(.steps) .navicon:before,
+        &__toggle:checked ~ .burger__btn:not(.steps) .navicon:after {
+            top: 0;
+        }
+    }
+}
+
+.info {
+    margin: 5vw 0;
+    &__h2 {
+        font-family: raleway-heavy, sans-serif;
+        font-size: 5vw;
+        font-weight: bold;
+        margin-bottom: 0;
+        @include _768 {
+            font-size: 14vw;
+        }
+    }
+    &__p {
+        font-family: raleway-Light, sans-serif;
+        font-size: 1vw;
+        line-height: 1.59em;
+        @include _768 {
+            font-size: 3vw;
+        }
+    }
+}
+.button {
+    background-color: #ff6033;
+    color: #ffffff;
+    // padding: 20px 26px;
+    height: 60px;
+    &:active {
+        background-color: #832105;
+    }
+}
+.button__span {
+    font-family: raleway-Light, sans-serif;
+    font-size: 20px;
+}
+.footer-content1 {
+    text-align: center;
+}
+@include _1140 {
+    .footer-content1 {
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,74 @@
+.container5 {
+    background-image: url(images/Subscribe/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: $PaddingLeft;
+    min-height: 500px;
+
+    @include ContentFlex(initial, flex, column, center, flex-start);
+    @include _768 {
+        padding-left: 0;
+        // background-image: url(images/Subscribe/bg-small.png);
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.9)),
+            url("images/Subscribe/bg-small.png");
+        text-align: center;
+    }
+    // padding-left: 160px;
+}
+.subscribe {
+    width: 100%;
+    &__title {
+        font-family: Raleway-Bold;
+        font-size: 3.5vw;
+        margin-bottom: 30px;
+        margin-top: 0;
+        @include _1140 {
+            font-size: 6vw;
+        }
+        @include _768 {
+            font-size: 9vw;
+        }
+    }
+    &__descr {
+        font-family: Raleway-Light;
+        font-size: 1.5vw;
+        line-height: 1.5882352941em;
+        margin-top: 0;
+        @include _1140 {
+            font-size: 3vw;
+        }
+        @include _768 {
+            font-size: 6vw;
+        }
+    }
+}
+.form {
+    width: 100%;
+
+    &__btn {
+        background-color: #96b92c;
+        height: 55px;
+
+        font-size: 1.5vw;
+        margin-left: 0;
+        color: #fff;
+        font-family: raleway-Light;
+        width: 15%;
+        @include _768 {
+            width: 25%;
+        }
+    }
+    &__btn:active {
+        background-color: #536718;
+    }
+
+    &__mail {
+        max-width: 570px;
+        height: 55px;
+        font-size: 1.5vw;
+        outline: none;
+        margin-right: 3%;
+        width: 60%;
+        font-family: raleway-Light;
+    }
+}

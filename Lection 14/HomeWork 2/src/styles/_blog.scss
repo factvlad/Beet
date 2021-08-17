@@ -1,0 +1,115 @@
+.block-6{
+    min-width: 1500px;
+    background-color: #b07cf7;
+    text-align: center;
+    padding-left: 165px;
+    padding-bottom: 120px;
+}
+.header-blog{
+    text-align: center;
+}
+.main-blog{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+.h1-blog{
+    color: #ffffff;
+    font-size: 90px;
+    font-family: Raleway-Bold,sans-serif;
+    margin: 100px 0 0 0;
+}
+.h1-p-blog{
+    font-size: 17px;
+    line-height: 1.4em;
+    color: #ffffff;
+    font-family: Raleway-Light,sans-serif;
+    margin-bottom: 45px;
+}
+.content-blog{
+    /* width:30% */
+    width:370px;
+    height:310px;
+    position: relative;
+}
+.content-blog:hover{
+    transform: rotate(30deg) scale(1.1);
+    transition: transform 2s;
+}
+.content-blog-1{
+    background-image: url(images/img-1.png);
+    margin-right: 15px;
+}
+.content-blog-2{
+    background-image: url(images/img-2.png);
+    margin: 0 15px;
+}
+.content-blog-3{
+    background-image: url(images/img-3.png);
+    margin-left: 15px;
+}
+.h2-blog{
+    text-align: center;
+    width:60px;
+    height: 60px;
+    background-color: #434953;
+    border-radius: 4px 4px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #ffffff;
+    vertical-align: middle;
+    position: relative;
+}
+.h2-p-blog{
+    padding: 0;
+    line-height: 1em;
+}
+.span-blog{
+    padding:0;
+    display: block;
+}
+.number-blog{
+    font-family: Raleway-Bold,sans-serif;
+    font-size: 32px;
+    padding-top: 0;
+    position: absolute;
+    top:-4px;
+    left:12px;
+}
+.month-blog{
+    font-family: Raleway-heavy,sans-serif;
+    font-size: 21px;
+    padding-bottom: 0px;
+    position: absolute;
+    top:32px;
+    left:8px;
+}
+.section-1-blog{
+    font-family: Raleway-Bold,sans-serif;
+    font-size: 20px;  
+}
+.section-2-blog{
+    font-family: Raleway-Light,sans-serif;
+    font-size: 13px;
+}
+.p-blog{
+    color: #ffffff;
+    vertical-align: bottom;
+    margin-left: 20px;
+    top:10px;
+    position: absolute;
+    top: 193px;
+}
+.view-blog{
+    font-size: 20px;
+    font-family: Raleway-Light,sans-serif;
+    padding: 20px 40px;
+    background-color: #f72b3b;
+    text-align: center;
+    margin-top: 50px;
+    color: #ffffff;
+}
+.view-blog:hover{
+    transform: translate(110%, 0);
+
+}

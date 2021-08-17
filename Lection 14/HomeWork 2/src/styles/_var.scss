@@ -1,0 +1,16 @@
+$BGColor: #ffe92f;
+$NameFontFamily: Raleway-Bold;
+$BaseFontFamily: Raleway-Light;
+$BaseFontColor:#262626; 
+$ButtonFontColor: #ffffff;
+$BaseFontSize: 17px;  
+$LineHeight:27em / 17;
+
+$BaseMarginPhotoWidth: 30px;
+$PhotosWidth:1170px;
+$PhotosHeight:980px; 
+$FirstRowPhotosHeight: $PhotosHeight * 0.56;
+$FirstRowPhotosWidth:  $PhotosWidth * 0.66;
+
+$SecondRowPhotosHeight: $PhotosHeight - ($FirstRowPhotosHeight + $BaseMarginPhotoWidth);
+$SecondRowPhotosWidth: $PhotosWidth / 2;
